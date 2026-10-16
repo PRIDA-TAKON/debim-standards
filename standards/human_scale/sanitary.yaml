@@ -1,0 +1,80 @@
+schema: "debim-standards/human-scale/v1.0"
+category: "sanitary"
+description: "Standard human scale sanitary fixture dimensions and activity clearance envelopes based on Neufert and Panero & Zelnik."
+
+items:
+  WATER_CLOSET:
+    id: "SAN-WATER-CLOSET"
+    name: "โถสุขภัณฑ์ (WC)"
+    name_en: "Water Closet (WC)"
+    category: "sanitary"
+    reference: "Neufert Architects' Data 4th Ed, p. 332; Panero & Zelnik Human Dimension, p. 216"
+    dimensions:
+      width: 0.45
+      depth: 0.70
+      height: 0.75
+    clearance:
+      front: 0.80
+      back: 0.00
+      left: 0.25
+      right: 0.25
+    footprint_area: 0.315
+    total_space_area: 1.425
+    tags: ["sanitary", "wc", "toilet"]
+
+  WASHBASIN_VANITY:
+    id: "SAN-WASHBASIN-VANITY"
+    name: "อ่างล้างหน้าและเคาน์เตอร์"
+    name_en: "Washbasin Vanity"
+    category: "sanitary"
+    reference: "Neufert Architects' Data 4th Ed, p. 332; Panero & Zelnik Human Dimension, p. 218"
+    dimensions:
+      width: 0.80
+      depth: 0.55
+      height: 0.85
+    clearance:
+      front: 0.75
+      back: 0.00
+      left: 0.10
+      right: 0.10
+    footprint_area: 0.44
+    total_space_area: 1.30
+    tags: ["sanitary", "washbasin", "vanity", "basin"]
+
+  SHOWER_BOX_090:
+    id: "SAN-SHOWER-BOX-090"
+    name: "ฉากกั้นอาบน้ำ 0.90x0.90 ม."
+    name_en: "Shower Box 0.90x0.90m"
+    category: "sanitary"
+    reference: "Neufert Architects' Data 4th Ed, p. 333; Panero & Zelnik Human Dimension, p. 220"
+    dimensions:
+      width: 0.90
+      depth: 0.90
+      height: 2.00
+    clearance:
+      front: 0.70
+      back: 0.00
+      left: 0.00
+      right: 0.00
+    footprint_area: 0.81
+    total_space_area: 1.44
+    tags: ["sanitary", "shower", "bath"]
+
+  BATHTUB_STANDARD:
+    id: "SAN-BATHTUB-STANDARD"
+    name: "อ่างอาบน้ำมาตรฐาน"
+    name_en: "Standard Bathtub"
+    category: "sanitary"
+    reference: "Neufert Architects' Data 4th Ed, p. 333; Panero & Zelnik Human Dimension, p. 222"
+    dimensions:
+      width: 1.70
+      depth: 0.75
+      height: 0.55
+    clearance:
+      front: 0.80
+      back: 0.00
+      left: 0.00
+      right: 0.00
+    footprint_area: 1.275
+    total_space_area: 2.635
+    tags: ["sanitary", "bathtub", "bath"]

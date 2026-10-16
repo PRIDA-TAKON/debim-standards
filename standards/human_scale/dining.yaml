@@ -1,0 +1,80 @@
+schema: "debim-standards/human-scale/v1.0"
+category: "dining"
+description: "Standard human scale furniture dimensions and clearance envelopes for dining spaces based on Neufert and Panero & Zelnik."
+
+items:
+  DINING_TABLE_4SEAT:
+    id: "FUR-DINING-TABLE-4SEAT"
+    name: "โต๊ะรับประทานอาหาร 4 ที่นั่ง"
+    name_en: "Dining Table 4-Seat"
+    category: "dining"
+    reference: "Neufert Architects' Data 4th Ed, p. 294; Panero & Zelnik Human Dimension, p. 136"
+    dimensions:
+      width: 1.20
+      depth: 0.80
+      height: 0.75
+    clearance:
+      front: 0.90
+      back: 0.90
+      left: 0.90
+      right: 0.90
+    footprint_area: 0.96
+    total_space_area: 7.80
+    tags: ["dining", "table", "4-seat"]
+
+  DINING_TABLE_6SEAT:
+    id: "FUR-DINING-TABLE-6SEAT"
+    name: "โต๊ะรับประทานอาหาร 6 ที่นั่ง"
+    name_en: "Dining Table 6-Seat"
+    category: "dining"
+    reference: "Neufert Architects' Data 4th Ed, p. 294; Panero & Zelnik Human Dimension, p. 136"
+    dimensions:
+      width: 1.80
+      depth: 0.90
+      height: 0.75
+    clearance:
+      front: 0.90
+      back: 0.90
+      left: 0.90
+      right: 0.90
+    footprint_area: 1.62
+    total_space_area: 9.72
+    tags: ["dining", "table", "6-seat"]
+
+  DINING_TABLE_8SEAT:
+    id: "FUR-DINING-TABLE-8SEAT"
+    name: "โต๊ะรับประทานอาหาร 8 ที่นั่ง"
+    name_en: "Dining Table 8-Seat"
+    category: "dining"
+    reference: "Neufert Architects' Data 4th Ed, p. 294; Panero & Zelnik Human Dimension, p. 137"
+    dimensions:
+      width: 2.40
+      depth: 1.00
+      height: 0.75
+    clearance:
+      front: 0.90
+      back: 0.90
+      left: 0.90
+      right: 0.90
+    footprint_area: 2.40
+    total_space_area: 11.76
+    tags: ["dining", "table", "8-seat"]
+
+  DINING_CHAIR:
+    id: "FUR-DINING-CHAIR"
+    name: "เก้าอี้รับประทานอาหาร"
+    name_en: "Dining Chair"
+    category: "dining"
+    reference: "Neufert Architects' Data 4th Ed, p. 294; Panero & Zelnik Human Dimension, p. 135"
+    dimensions:
+      width: 0.50
+      depth: 0.55
+      height: 0.85
+    clearance:
+      front: 0.20
+      back: 0.60
+      left: 0.15
+      right: 0.15
+    footprint_area: 0.275
+    total_space_area: 1.08
+    tags: ["dining", "chair", "seating"]

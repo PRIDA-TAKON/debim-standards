@@ -1,0 +1,137 @@
+schema: "debim-standards/human-scale/v1.0"
+category: "bedroom"
+description: "Standard human scale furniture dimensions and clearance envelopes for bedroom spaces based on Neufert and Panero & Zelnik."
+
+items:
+  BED_KING_6FT:
+    id: "FUR-BED-KING-6FT"
+    name: "เตียงนอนขนาด King Size (6 ฟุต)"
+    name_en: "King Size Bed 6ft"
+    category: "bedroom"
+    reference: "Neufert Architects' Data 4th Ed, p. 254; Panero & Zelnik Human Dimension, p. 142"
+    dimensions:
+      width: 1.80
+      depth: 2.00
+      height: 0.90
+    clearance:
+      front: 0.80
+      back: 0.00
+      left: 0.60
+      right: 0.60
+    footprint_area: 3.60
+    total_space_area: 8.40
+    tags: ["bedroom", "bed", "sleeping", "king"]
+
+  BED_QUEEN_5FT:
+    id: "FUR-BED-QUEEN-5FT"
+    name: "เตียงนอนขนาด Queen Size (5 ฟุต)"
+    name_en: "Queen Size Bed 5ft"
+    category: "bedroom"
+    reference: "Neufert Architects' Data 4th Ed, p. 254; Panero & Zelnik Human Dimension, p. 142"
+    dimensions:
+      width: 1.50
+      depth: 2.00
+      height: 0.90
+    clearance:
+      front: 0.80
+      back: 0.00
+      left: 0.60
+      right: 0.60
+    footprint_area: 3.00
+    total_space_area: 7.56
+    tags: ["bedroom", "bed", "sleeping", "queen"]
+
+  BED_SINGLE_35FT:
+    id: "FUR-BED-SINGLE-35FT"
+    name: "เตียงนอนขนาด Single (3.5 ฟุต)"
+    name_en: "Single Bed 3.5ft"
+    category: "bedroom"
+    reference: "Neufert Architects' Data 4th Ed, p. 254; Panero & Zelnik Human Dimension, p. 141"
+    dimensions:
+      width: 1.05
+      depth: 2.00
+      height: 0.90
+    clearance:
+      front: 0.80
+      back: 0.00
+      left: 0.60
+      right: 0.60
+    footprint_area: 2.10
+    total_space_area: 6.30
+    tags: ["bedroom", "bed", "sleeping", "single"]
+
+  WARDROBE_12M:
+    id: "FUR-WARDROBE-12M"
+    name: "ตู้เสื้อผ้า 1.20 เมตร"
+    name_en: "Wardrobe 1.2m"
+    category: "bedroom"
+    reference: "Neufert Architects' Data 4th Ed, p. 255; Panero & Zelnik Human Dimension, p. 145"
+    dimensions:
+      width: 1.20
+      depth: 0.60
+      height: 2.10
+    clearance:
+      front: 0.90
+      back: 0.00
+      left: 0.00
+      right: 0.00
+    footprint_area: 0.72
+    total_space_area: 1.80
+    tags: ["bedroom", "storage", "wardrobe"]
+
+  WARDROBE_18M:
+    id: "FUR-WARDROBE-18M"
+    name: "ตู้เสื้อผ้า 1.80 เมตร"
+    name_en: "Wardrobe 1.8m"
+    category: "bedroom"
+    reference: "Neufert Architects' Data 4th Ed, p. 255; Panero & Zelnik Human Dimension, p. 145"
+    dimensions:
+      width: 1.80
+      depth: 0.60
+      height: 2.10
+    clearance:
+      front: 0.90
+      back: 0.00
+      left: 0.00
+      right: 0.00
+    footprint_area: 1.08
+    total_space_area: 2.70
+    tags: ["bedroom", "storage", "wardrobe"]
+
+  WARDROBE_24M:
+    id: "FUR-WARDROBE-24M"
+    name: "ตู้เสื้อผ้า 2.40 เมตร"
+    name_en: "Wardrobe 2.4m"
+    category: "bedroom"
+    reference: "Neufert Architects' Data 4th Ed, p. 255; Panero & Zelnik Human Dimension, p. 145"
+    dimensions:
+      width: 2.40
+      depth: 0.60
+      height: 2.10
+    clearance:
+      front: 0.90
+      back: 0.00
+      left: 0.00
+      right: 0.00
+    footprint_area: 1.44
+    total_space_area: 3.60
+    tags: ["bedroom", "storage", "wardrobe"]
+
+  DRESSING_TABLE:
+    id: "FUR-DRESSING-TABLE"
+    name: "โต๊ะเครื่องแป้ง"
+    name_en: "Dressing Table"
+    category: "bedroom"
+    reference: "Neufert Architects' Data 4th Ed, p. 256; Panero & Zelnik Human Dimension, p. 146"
+    dimensions:
+      width: 1.00
+      depth: 0.45
+      height: 0.75
+    clearance:
+      front: 0.75
+      back: 0.00
+      left: 0.00
+      right: 0.00
+    footprint_area: 0.45
+    total_space_area: 1.20
+    tags: ["bedroom", "vanity", "dressing"]
