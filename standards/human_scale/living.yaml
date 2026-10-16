@@ -1,0 +1,118 @@
+schema: "debim-standards/human-scale/v1.0"
+category: "living"
+description: "Standard human scale furniture dimensions and clearance envelopes for living room spaces based on Neufert and Panero & Zelnik."
+
+items:
+  SOFA_2SEAT:
+    id: "FUR-SOFA-2SEAT"
+    name: "โซฟา 2 ที่นั่ง"
+    name_en: "2-Seat Sofa"
+    category: "living"
+    reference: "Neufert Architects' Data 4th Ed, p. 288; Panero & Zelnik Human Dimension, p. 129"
+    dimensions:
+      width: 1.50
+      depth: 0.85
+      height: 0.85
+    clearance:
+      front: 0.45
+      back: 0.00
+      left: 0.20
+      right: 0.20
+    footprint_area: 1.275
+    total_space_area: 2.47
+    tags: ["living", "sofa", "seating"]
+
+  SOFA_3SEAT:
+    id: "FUR-SOFA-3SEAT"
+    name: "โซฟา 3 ที่นั่ง"
+    name_en: "3-Seat Sofa"
+    category: "living"
+    reference: "Neufert Architects' Data 4th Ed, p. 288; Panero & Zelnik Human Dimension, p. 129"
+    dimensions:
+      width: 2.10
+      depth: 0.85
+      height: 0.85
+    clearance:
+      front: 0.45
+      back: 0.00
+      left: 0.20
+      right: 0.20
+    footprint_area: 1.785
+    total_space_area: 3.25
+    tags: ["living", "sofa", "seating"]
+
+  SOFA_LSHAPE:
+    id: "FUR-SOFA-LSHAPE"
+    name: "โซฟาทรงตัวแอล (L-Shape)"
+    name_en: "L-Shape Sofa"
+    category: "living"
+    reference: "Neufert Architects' Data 4th Ed, p. 288; Panero & Zelnik Human Dimension, p. 130"
+    dimensions:
+      width: 2.50
+      depth: 1.60
+      height: 0.85
+    clearance:
+      front: 0.50
+      back: 0.00
+      left: 0.20
+      right: 0.20
+    footprint_area: 4.00
+    total_space_area: 6.09
+    tags: ["living", "sofa", "seating", "l-shape"]
+
+  COFFEE_TABLE:
+    id: "FUR-COFFEE-TABLE"
+    name: "โต๊ะกาแฟ / โต๊ะกลาง"
+    name_en: "Coffee Table"
+    category: "living"
+    reference: "Neufert Architects' Data 4th Ed, p. 289; Panero & Zelnik Human Dimension, p. 131"
+    dimensions:
+      width: 1.20
+      depth: 0.60
+      height: 0.45
+    clearance:
+      front: 0.45
+      back: 0.45
+      left: 0.30
+      right: 0.30
+    footprint_area: 0.72
+    total_space_area: 2.70
+    tags: ["living", "table", "coffee"]
+
+  TV_CONSOLE:
+    id: "FUR-TV-CONSOLE"
+    name: "ตู้และตู้วางทีวี"
+    name_en: "TV Console"
+    category: "living"
+    reference: "Neufert Architects' Data 4th Ed, p. 289; Panero & Zelnik Human Dimension, p. 132"
+    dimensions:
+      width: 1.80
+      depth: 0.45
+      height: 0.55
+    clearance:
+      front: 0.80
+      back: 0.00
+      left: 0.00
+      right: 0.00
+    footprint_area: 0.81
+    total_space_area: 2.25
+    tags: ["living", "tv", "console", "media"]
+
+  ARMCHAIR:
+    id: "FUR-ARMCHAIR"
+    name: "เก้าอี้อาร์มแชร์"
+    name_en: "Armchair"
+    category: "living"
+    reference: "Neufert Architects' Data 4th Ed, p. 288; Panero & Zelnik Human Dimension, p. 128"
+    dimensions:
+      width: 0.85
+      depth: 0.85
+      height: 0.85
+    clearance:
+      front: 0.50
+      back: 0.10
+      left: 0.20
+      right: 0.20
+    footprint_area: 0.7225
+    total_space_area: 1.8125
+    tags: ["living", "chair", "armchair", "seating"]

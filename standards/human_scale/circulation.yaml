@@ -1,0 +1,61 @@
+schema: "debim-standards/human-scale/v1.0"
+category: "circulation"
+description: "Standard human scale circulation envelopes and passageway standards based on Neufert and Panero & Zelnik."
+
+items:
+  CORRIDOR_SINGLE:
+    id: "CIR-CORRIDOR-SINGLE"
+    name: "ทางเดินคนเดียว (0.90 ม.)"
+    name_en: "Single Person Corridor (0.90m)"
+    category: "circulation"
+    reference: "Neufert Architects' Data 4th Ed, p. 182; Panero & Zelnik Human Dimension, p. 88"
+    dimensions:
+      width: 0.90
+      depth: 1.00
+      height: 2.10
+    clearance:
+      front: 0.00
+      back: 0.00
+      left: 0.00
+      right: 0.00
+    footprint_area: 0.90
+    total_space_area: 0.90
+    tags: ["circulation", "corridor", "single", "passageway"]
+
+  CORRIDOR_TWO_PERSON:
+    id: "CIR-CORRIDOR-TWO-PERSON"
+    name: "ทางเดินสวนกันสองคน (1.20 ม.)"
+    name_en: "Two-Person Passing Corridor (1.20m)"
+    category: "circulation"
+    reference: "Neufert Architects' Data 4th Ed, p. 182; Panero & Zelnik Human Dimension, p. 89"
+    dimensions:
+      width: 1.20
+      depth: 1.00
+      height: 2.10
+    clearance:
+      front: 0.00
+      back: 0.00
+      left: 0.00
+      right: 0.00
+    footprint_area: 1.20
+    total_space_area: 1.20
+    tags: ["circulation", "corridor", "passing", "two-person"]
+
+  WHEELCHAIR_TURNAROUND:
+    id: "CIR-WHEELCHAIR-TURNAROUND"
+    name: "พื้นที่หมุนตัวรถเข็นผู้พิกาต/วีลแชร์ (1.50 ม.)"
+    name_en: "Wheelchair Turnaround Space (1.50m)"
+    category: "circulation"
+    reference: "Neufert Architects' Data 4th Ed, p. 38; Panero & Zelnik Human Dimension, p. 94"
+    dimensions:
+      width: 1.50
+      depth: 1.50
+      height: 2.10
+    clearance:
+      front: 0.00
+      back: 0.00
+      left: 0.00
+      right: 0.00
+    footprint_area: 2.25
+    total_space_area: 2.25
+    tags: ["circulation", "accessibility", "wheelchair", "turnaround", "ada"]
