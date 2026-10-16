@@ -2,8 +2,73 @@
 Pydantic data models for architectural anthropometrics and human scale standards.
 """
 
-from typing import Dict, List
+from typing import Dict, List, Optional, Any, Union
 from pydantic import BaseModel, Field
+
+
+class RemediationDirective(BaseModel):
+    """
+    Directive recommending architectural remediation actions when a rule clause is violated.
+    """
+    message_th: str = Field(..., description="Remediation guidance in Thai")
+    message_en: str = Field(..., description="Remediation guidance in English")
+    suggested_action: Optional[str] = Field(None, description="Suggested action code or parameter fix")
+
+
+class EvaluationMetric(BaseModel):
+    """
+    Specific metric/threshold evaluation rule for a regulation clause.
+    """
+    metric_id: str = Field(..., description="Unique metric identifier e.g., METRIC-STAIR-RISER")
+    name: str = Field(..., description="Metric description")
+    parameter: str = Field(..., description="Target parameter to evaluate e.g., riser_height, clear_height")
+    unit: str = Field(..., description="Unit of measurement e.g., meters, ratio, degrees")
+    operator: str = Field(..., description="Comparison operator e.g., '<=', '>=', '==', '<', '>'")
+    threshold: float = Field(..., description="Threshold value for evaluation")
+    remediation: Optional[RemediationDirective] = Field(None, description="Remediation advice if non-compliant")
+
+    def evaluate(self, value: float) -> bool:
+        """
+        Evaluates a given numeric value against threshold using operator.
+        """
+        if self.operator == "<=":
+            return value <= self.threshold
+        elif self.operator == ">=":
+            return value >= self.threshold
+        elif self.operator == "<":
+            return value < self.threshold
+        elif self.operator == ">":
+            return value > self.threshold
+        elif self.operator in ("==", "="):
+            return value == self.threshold
+        else:
+            raise ValueError(f"Unsupported comparison operator: {self.operator}")
+
+
+class RegulationClause(BaseModel):
+    """
+    A specific clause/article within a regulation ruleset.
+    """
+    clause_id: str = Field(..., description="Clause or article identifier e.g., CLAUSE-22, CLAUSE-51")
+    title: str = Field(..., description="Clause title in Thai")
+    title_en: str = Field(..., description="Clause title in English")
+    description: str = Field(..., description="Summary of clause requirement")
+    reference: str = Field(..., description="Legal reference e.g. Ministerial Regulation No. 55 Clause 22")
+    metrics: List[EvaluationMetric] = Field(default_factory=list, description="Evaluation metrics for this clause")
+    tags: List[str] = Field(default_factory=list, description="Categorization tags")
+
+
+class RegulationRuleset(BaseModel):
+    """
+    Comprehensive legal ruleset catalog containing multiple regulation clauses.
+    """
+    schema_version: str = Field(..., alias="schema", description="Schema identifier e.g., debim-standards/regulation/v1.0")
+    jurisdiction: str = Field(..., description="Jurisdiction code e.g., TH, BMA")
+    regulation_id: str = Field(..., description="Unique regulation catalog identifier")
+    title: str = Field(..., description="Regulation title in Thai")
+    title_en: str = Field(..., description="Regulation title in English")
+    description: str = Field(..., description="Description of the regulation ruleset")
+    clauses: Dict[str, RegulationClause] = Field(..., description="Map of clause keys to RegulationClause models")
 
 
 class ClearanceEnvelope(BaseModel):

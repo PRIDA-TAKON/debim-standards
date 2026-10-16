@@ -5,8 +5,12 @@ debim-standards: Open Data Standards, Human Scale Anthropometrics, Building Code
 from .models import (
     ClearanceEnvelope,
     Dimensions3D,
+    EvaluationMetric,
     FurnitureStandard,
     HumanScaleCatalog,
+    RegulationClause,
+    RegulationRuleset,
+    RemediationDirective,
 )
 
 __version__ = "0.1.0"
@@ -14,7 +18,11 @@ __version__ = "0.1.0"
 __all__ = [
     "ClearanceEnvelope",
     "Dimensions3D",
+    "EvaluationMetric",
     "FurnitureStandard",
     "HumanScaleCatalog",
+    "RegulationClause",
+    "RegulationRuleset",
+    "RemediationDirective",
     "__version__",
 ]

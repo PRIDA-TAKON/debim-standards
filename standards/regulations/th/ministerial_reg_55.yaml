@@ -1,0 +1,138 @@
+schema: "debim-standards/regulation/v1.0"
+jurisdiction: "TH"
+regulation_id: "TH-MR55-2543"
+title: "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ออกตามความในพระราชบัญญัติควบคุมอาคาร พ.ศ. 2522"
+title_en: "Ministerial Regulation No. 55 (B.E. 2543) under Building Control Act B.E. 2522"
+description: "ข้อกำหนดและมาตรฐานสถาปัตยกรรมสำหรับอาคารพักอาศัยและอาคารทั่วไปตามกฎหมายควบคุมอาคารไทย"
+
+clauses:
+  CLAUSE_51_LIGHT_VENTILATION:
+    clause_id: "CLAUSE-51"
+    title: "ข้อ 51 ช่องเปิดแสงธรรมชาติและการระบายอากาศ"
+    title_en: "Clause 51 Natural Light and Ventilation Openings"
+    description: "อาคารอยู่อาศัยต้องมีช่องเปิดด้านนอกอาคารเพื่อแสงสว่างและการระบายอากาศไม่น้อยกว่าร้อยละ 10 ของพื้นที่ห้อง"
+    reference: "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ข้อ 51"
+    tags:
+      - "lighting"
+      - "ventilation"
+      - "window"
+      - "habitable"
+    metrics:
+      - metric_id: "METRIC-LIGHT-VENT-RATIO"
+        name: "Natural Light and Ventilation Window Area Ratio"
+        parameter: "opening_area_ratio"
+        unit: "ratio"
+        operator: ">="
+        threshold: 0.10
+        remediation:
+          message_th: "เพิ่มขนาดหน้าต่างหรือช่องเปิดระบายอากาศให้ได้พื้นที่ไม่น้อยกว่า 10% ของพื้นที่ห้อง"
+          message_en: "Increase window or ventilation opening area to at least 10% of net floor area"
+          suggested_action: "INCREASE_WINDOW_AREA"
+
+  CLAUSE_22_STAIR_DESIGN:
+    clause_id: "CLAUSE-22"
+    title: "ข้อ 22 บันไดของอาคารอยู่อาศัย"
+    title_en: "Clause 22 Residential Staircase Design"
+    description: "ข้อกำหนดมิติบันได ได้แก่ ระยะลูกตั้ง ระยะลูกนอน ความกว้างสุทธิ และความสูงระยะดิ่ง (Headroom)"
+    reference: "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ข้อ 22"
+    tags:
+      - "stair"
+      - "circulation"
+      - "safety"
+    metrics:
+      - metric_id: "METRIC-STAIR-RISER"
+        name: "Stair Maximum Riser Height"
+        parameter: "riser_height"
+        unit: "meters"
+        operator: "<="
+        threshold: 0.20
+        remediation:
+          message_th: "ลดความสูงลูกตั้งบันไดให้ไม่เกิน 0.20 เมตร"
+          message_en: "Reduce stair riser height to not exceed 0.20m"
+          suggested_action: "REDUCE_RISER_HEIGHT"
+      - metric_id: "METRIC-STAIR-TREAD"
+        name: "Stair Minimum Tread Width"
+        parameter: "tread_width"
+        unit: "meters"
+        operator: ">="
+        threshold: 0.22
+        remediation:
+          message_th: "เพิ่มความกว้างลูกนอนบันไดให้ไม่น้อยกว่า 0.22 เมตร"
+          message_en: "Increase stair tread width to at least 0.22m"
+          suggested_action: "INCREASE_TREAD_WIDTH"
+      - metric_id: "METRIC-STAIR-CLEAR-WIDTH"
+        name: "Stair Minimum Clear Width"
+        parameter: "clear_width"
+        unit: "meters"
+        operator: ">="
+        threshold: 0.90
+        remediation:
+          message_th: "ขยายความกว้างสุทธิของบันไดให้ไม่น้อยกว่า 0.90 เมตร"
+          message_en: "Increase stair clear width to at least 0.90m"
+          suggested_action: "EXPAND_STAIR_WIDTH"
+      - metric_id: "METRIC-STAIR-HEADROOM"
+        name: "Stair Minimum Headroom"
+        parameter: "headroom_height"
+        unit: "meters"
+        operator: ">="
+        threshold: 2.00
+        remediation:
+          message_th: "เพิ่มระยะดิ่งเหนือบันไดให้ไม่น้อยกว่า 2.00 เมตร"
+          message_en: "Increase vertical headroom clear height above stair to at least 2.00m"
+          suggested_action: "INCREASE_HEADROOM"
+
+  CLAUSE_33_ROOM_CLEAR_HEIGHT:
+    clause_id: "CLAUSE-33"
+    title: "ข้อ 33 ความสูงสุทธิของห้อง"
+    title_en: "Clause 33 Minimum Room Clear Height"
+    description: "ระยะความสูงสุทธิจากพื้นถึงเพดานสำหรับห้องอยู่อาศัยและห้องน้ำ"
+    reference: "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ข้อ 33"
+    tags:
+      - "clear_height"
+      - "ceiling"
+      - "habitable"
+      - "bathroom"
+    metrics:
+      - metric_id: "METRIC-HABITABLE-CLEAR-HEIGHT"
+        name: "Habitable Space Minimum Clear Height"
+        parameter: "habitable_clear_height"
+        unit: "meters"
+        operator: ">="
+        threshold: 2.60
+        remediation:
+          message_th: "เพิ่มระยะความสูงพื้นถึงเพดานห้องอยู่อาศัยให้ไม่น้อยกว่า 2.60 เมตร"
+          message_en: "Increase ceiling clear height in habitable room to at least 2.60m"
+          suggested_action: "RAISE_CEILING_HEIGHT"
+      - metric_id: "METRIC-BATHROOM-CLEAR-HEIGHT"
+        name: "Bathroom Minimum Clear Height"
+        parameter: "bathroom_clear_height"
+        unit: "meters"
+        operator: ">="
+        threshold: 2.00
+        remediation:
+          message_th: "เพิ่มระยะความสูงพื้นถึงเพดานห้องน้ำให้ไม่น้อยกว่า 2.00 เมตร"
+          message_en: "Increase ceiling clear height in bathroom to at least 2.00m"
+          suggested_action: "RAISE_BATHROOM_CEILING"
+
+  CLAUSE_40_WET_AREA_FLOOR_DROP:
+    clause_id: "CLAUSE-40"
+    title: "ข้อ 40 การลดระดับพื้นส่วนเปียกห้องน้ำ"
+    title_en: "Clause 40 Wet Area Bathroom Floor Step Drop"
+    description: "การลดระดับพื้นห้องน้ำหรือส่วนเปียกต่างระดับเพื่อป้องกันน้ำไหลเอิ่งล้น"
+    reference: "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ข้อ 40"
+    tags:
+      - "bathroom"
+      - "wet_area"
+      - "floor_drop"
+      - "drainage"
+    metrics:
+      - metric_id: "METRIC-BATHROOM-DROP-ELEVATION"
+        name: "Wet Area Floor Drop Elevation"
+        parameter: "drop_elevation"
+        unit: "meters"
+        operator: "<="
+        threshold: -0.10
+        remediation:
+          message_th: "ลดระดับพื้นส่วนเปียกห้องน้ำให้ต่ำกว่าพื้นทั่วไปอย่างน้อย 0.10 เมตร"
+          message_en: "Lower wet area floor elevation by at least 0.10m step down relative to main floor"
+          suggested_action: "DROP_BATHROOM_FLOOR"
