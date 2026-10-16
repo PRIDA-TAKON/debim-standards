@@ -1,0 +1,49 @@
+[
+  {
+    "wave": 1,
+    "issue_key": "wave_1_human_scale_baseline",
+    "match_keywords": ["human_scale", "human scale", "anthropometric", "clearance", "furniture baseline", "models.py"],
+    "next_issue": {
+      "title": "feat(regulations): Thai building control regulations and MR 55 legal ruleset catalog",
+      "body": "### Overview\nAs part of debim-standards Wave 2, extract Thai building regulations (specifically Ministerial Regulation No. 55 B.E. 2543 issued under the Building Control Act B.E. 2522) into machine-readable YAML rulesets for automated architectural unit testing in `debim audit`.\n\n### Tasks\n1. In `src/debim_standards/models.py`: Define Pydantic models for `RegulationRuleset`, `RegulationClause`, `EvaluationMetric`, and `RemediationDirective`.\n2. In `standards/regulations/th/ministerial_reg_55.yaml`: Formulate machine-verifiable rules for:\n   - Clause 51: Natural light and ventilation >= 10% of net floor area\n   - Clause 22: Stair design (riser <= 0.20m, tread >= 0.22m, clear width >= 0.90m, headroom >= 2.00m)\n   - Clause 33: Minimum room clear height (habitable space >= 2.60m, bathroom >= 2.00m)\n   - Clause 40: Wet area bathroom floor drop (minimum 0.10m step-down / `drop_elevation <= -0.10`)\n3. In `standards/regulations/th/setbacks.yaml`: Define standard property boundary setbacks (0.50m for blank wall, 2.00m for opening/balcony) and public road setbacks.\n4. Add unit tests in `tests/test_regulations.py` verifying parsing, validation, and threshold evaluation.\n\n### Acceptance Criteria\n- `standards/regulations/th/ministerial_reg_55.yaml` parses cleanly into validated Pydantic models.\n- `pytest tests/test_regulations.py` passes 100%.",
+      "label": "jules"
+    }
+  },
+  {
+    "wave": 2,
+    "issue_key": "wave_2_thai_regulations",
+    "match_keywords": ["regulations", "ministerial", "mr 55", "building control", "setbacks", "thai law"],
+    "next_issue": {
+      "title": "feat(materials): CGD ว480 public works pricing and sustainability carbon catalog",
+      "body": "### Overview\nAs part of debim-standards Wave 3, formulate a standardized machine-readable catalog of structural, architectural, and MEP construction materials based on Thai Comptroller General's Department (CGD) ว480 pricing criteria and embodied carbon metrics.\n\n### Tasks\n1. In `src/debim_standards/models.py`: Define `MaterialItem`, `CostBreakdown` (material price, labor price, total price, currency), and `CarbonMetrics` (embodied carbon in kgCO2e/unit).\n2. Create `standards/materials/cgd_v480.yaml`: Standard items covering:\n   - Structural Concrete (240 ksc, 280 ksc cube/cylinder)\n   - Rebar (RB9, DB12, DB16, DB20, DB25 SD40)\n   - Formwork (wooden formwork, steel props, deduction factors)\n   - Masonry & Finishes (AAC block 7.5cm, clay brick, ceramic tile, granite, parquet)\n   - Openings & Roofing (aluminum glass doors/windows, CPAC Monier tiles, metal sheet PU foam)\n3. Create `standards/materials/sustainability.yaml`: Embodied carbon benchmarks for standard Thai construction materials.\n4. Add unit tests in `tests/test_materials.py`.\n\n### Acceptance Criteria\n- Material costs and units match official CGD ว480 guidelines.\n- `pytest tests/test_materials.py` passes 100%.",
+      "label": "jules"
+    }
+  },
+  {
+    "wave": 3,
+    "issue_key": "wave_3_materials_cgd_v480",
+    "match_keywords": ["materials", "cgd", "ว480", "pricing", "embodied carbon", "sustainability"],
+    "next_issue": {
+      "title": "feat(web): interactive web catalog explorer with 2D clearance visualizer",
+      "body": "### Overview\nAs part of debim-standards Wave 4, build a zero-install interactive Single-Page Application (SPA) in `docs/index.html` allowing architects, students, and developers to explore human scale furniture envelopes, building regulations, and material specifications visually in a web browser.\n\n### Tasks\n1. Create `docs/index.html`, `docs/app.js`, and `docs/styles.css`:\n   - Clean modern UI (light/dark mode, responsive mobile/desktop).\n   - Category navigation tabs: [Human Scale], [Building Codes (MR 55)], [Materials & ว480].\n   - Real-time instant search box filtering across all standard items.\n2. Interactive 2D Visualizer: Render Top-View 2D SVG / Canvas showing the physical footprint and semi-transparent clearance envelopes (with dimension callouts).\n3. Export build script in `tools/build_web_data.py` compiling all YAML files into `docs/data.json`.\n4. Add tests in `tests/test_web_build.py` verifying that `data.json` matches all source YAML standards.\n\n### Acceptance Criteria\n- Opening `docs/index.html` in any browser runs smoothly without external bundlers.\n- Displays dynamic 2D furniture clearance diagrams and law clauses.\n- `pytest tests/test_web_build.py` passes 100%.",
+      "label": "jules"
+    }
+  },
+  {
+    "wave": 4,
+    "issue_key": "wave_4_web_catalog_explorer",
+    "match_keywords": ["web catalog", "interactive web", "explorer", "clearance visualizer", "docs/index.html", "app.js"],
+    "next_issue": {
+      "title": "feat(sdk): python client SDK with offline local caching and debim CLI integration",
+      "body": "### Overview\nAs part of debim-standards Wave 5 (Final Wave), develop a pip-installable Python client SDK (`debim_standards`) providing unified querying APIs and local disk caching (~/.debim/standards_cache) for seamless integration into the `debim` compiler and offline air-gapped sandboxes.\n\n### Tasks\n1. In `src/debim_standards/loader.py`: Implement high-level access functions:\n   - `get_furniture(ref_id: str) -> Optional[FurnitureStandard]`\n   - `get_regulations(jurisdiction: str = 'TH') -> List[RegulationClause]`\n   - `get_material_price(material_id: str) -> Optional[MaterialItem]`\n2. In `src/debim_standards/cache.py`: Support offline local disk cache with 7-day TTL and air-gapped fallback to bundled static data.\n3. Add integration showcase example in `examples/debim_integration_example.py` demonstrating consumption from `debim derive`.\n4. Add unit tests in `tests/test_sdk_integration.py`.\n\n### Acceptance Criteria\n- SDK can be imported and queried with zero network dependency.\n- `pytest tests/test_sdk_integration.py` passes 100%.",
+      "label": "jules"
+    }
+  },
+  {
+    "wave": 5,
+    "issue_key": "wave_5_python_sdk_and_integration",
+    "match_keywords": ["sdk", "client sdk", "offline caching", "loader.py", "integration", "cache.py"],
+    "is_final_wave": true,
+    "next_issue": null
+  }
+]

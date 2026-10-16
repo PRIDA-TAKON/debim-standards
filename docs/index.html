@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>debim-standards | Open Architectural Data & Human Scale Catalog</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sarabun:wght@400;500;600&display=swap">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-hover: #0284c7;
+      --accent: #10b981;
+      --clearance-fill: rgba(56, 189, 248, 0.15);
+      --clearance-stroke: #38bdf8;
+      --furniture-fill: #334155;
+      --furniture-stroke: #64748b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', 'Sarabun', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--primary);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(to right, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      background: var(--card-bg);
+      color: var(--text-muted);
+      border: 1px solid var(--card-border);
+      padding: 0.6rem 1.2rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn:hover {
+      background: #273548;
+      color: var(--text);
+    }
+
+    .tab-btn.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 600;
+    }
+
+    .search-bar {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-input {
+      width: 100%;
+      max-width: 500px;
+      padding: 0.75rem 1.25rem;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 0.5rem;
+      color: var(--text);
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--primary);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(56, 189, 248, 0.4);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+    }
+
+    .card-category {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.25rem;
+      background: rgba(16, 185, 129, 0.1);
+      color: var(--accent);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+
+    .diagram-container {
+      width: 100%;
+      height: 180px;
+      background: #090e1a;
+      border-radius: 0.5rem;
+      border: 1px dashed var(--card-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+
+    .metrics-table {
+      width: 100%;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-collapse: collapse;
+      margin-top: auto;
+    }
+
+    .metrics-table td {
+      padding: 0.35rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .metrics-table td:last-child {
+      text-align: right;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--card-border);
+      padding-top: 2rem;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="badge">Open Data Standards for debim</div>
+      <h1>debim-standards Explorer</h1>
+      <p class="subtitle">คลังข้อมูลเปิดมิติสัดส่วนมนุษย์ (Human Scale), กฎหมายควบคุมอาคาร, และราคากลาง ว480 เพื่อการสร้างโมเดล BIM อัตโนมัติด้วย AI</p>
+    </header>
+
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchCategory('all')">ทั้งหมด (All)</button>
+      <button class="tab-btn" onclick="switchCategory('bedroom')">ห้องนอน (Bedroom)</button>
+      <button class="tab-btn" onclick="switchCategory('living')">ห้องนั่งเล่น (Living)</button>
+      <button class="tab-btn" onclick="switchCategory('dining')">ทานอาหาร (Dining)</button>
+      <button class="tab-btn" onclick="switchCategory('sanitary')">สุขภัณฑ์ (Sanitary)</button>
+      <button class="tab-btn" onclick="switchCategory('regulation')">กฎหมายอาคาร (MR 55)</button>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" class="search-input" placeholder="🔍 ค้นหาเฟอร์นิเจอร์ เช่น เตียง King, ตู้เสื้อผ้า, กฎกระทรวง 55...">
+    </div>
+
+    <div class="grid" id="catalogGrid">
+      <!-- Dynamic Catalog Cards will be populated here -->
+    </div>
+
+    <footer>
+      <p>Part of the <a href="https://github.com/PRIDA-TAKON/debim" target="_blank">debim Ecosystem</a> | Declarative Building-as-Code</p>
+      <p style="margin-top: 0.5rem; font-size: 0.8rem;">Reference: Ernst Neufert Architects' Data, Panero & Zelnik Human Dimension, and Thai Ministerial Regulation No. 55</p>
+    </footer>
+  </div>
+
+  <script>
+    const sampleCatalog = [
+      {
+        id: "BED_KING_6FT",
+        name: "เตียงนอน King 6 ฟุต (King Bed 6ft)",
+        category: "bedroom",
+        dims: "1.80 × 2.00 × 0.90 ม.",
+        clearance: "หน้า 0.80 ม. / ซ้าย-ขวา 0.60 ม.",
+        minArea: "7.28 ตร.ม.",
+        ref: "Neufert 4th Ed, p. 254",
+        svg: `<svg viewBox="0 0 200 160" width="100%" height="100%">
+          <rect x="25" y="10" width="150" height="135" fill="rgba(56, 189, 248, 0.15)" stroke="#38bdf8" stroke-dasharray="3,3" />
+          <rect x="55" y="10" width="90" height="95" rx="3" fill="#334155" stroke="#64748b" stroke-width="2" />
+          <rect x="65" y="15" width="30" height="20" rx="2" fill="#475569" />
+          <rect x="105" y="15" width="30" height="20" rx="2" fill="#475569" />
+          <text x="100" y="65" fill="#f8fafc" font-size="11" text-anchor="middle" font-family="sans-serif">1.80 x 2.00m</text>
+          <text x="100" y="125" fill="#38bdf8" font-size="9" text-anchor="middle" font-family="sans-serif">+Clearance 0.80m</text>
+        </svg>`
+      },
+      {
+        id: "WARDROBE_2M",
+        name: "ตู้เสื้อผ้าบานเปิด 2.0 ม. (Wardrobe 2.0m)",
+        category: "bedroom",
+        dims: "2.00 × 0.60 × 2.20 ม.",
+        clearance: "หน้า 0.90 ม. (เปิดบาน & ยืนเลือก)",
+        minArea: "3.00 ตร.ม.",
+        ref: "Panero & Zelnik, p. 145",
+        svg: `<svg viewBox="0 0 200 160" width="100%" height="100%">
+          <rect x="30" y="30" width="140" height="100" fill="rgba(56, 189, 248, 0.15)" stroke="#38bdf8" stroke-dasharray="3,3" />
+          <rect x="30" y="30" width="140" height="40" fill="#334155" stroke="#64748b" stroke-width="2" />
+          <line x1="100" y1="30" x2="100" y2="70" stroke="#64748b" stroke-width="1.5" />
+          <text x="100" y="55" fill="#f8fafc" font-size="11" text-anchor="middle" font-family="sans-serif">2.00 x 0.60m</text>
+          <text x="100" y="105" fill="#38bdf8" font-size="9" text-anchor="middle" font-family="sans-serif">Clearance 0.90m</text>
+        </svg>`
+      },
+      {
+        id: "SOFA_3SEAT",
+        name: "ชุดโซฟารับแขก 3 ที่นั่ง (Sofa 3 Seats)",
+        category: "living",
+        dims: "2.40 × 0.90 × 0.85 ม.",
+        clearance: "หน้า 0.80 ม. / ซ้าย-ขวา 0.30 ม.",
+        minArea: "5.10 ตร.ม.",
+        ref: "Neufert 4th Ed, p. 280",
+        svg: `<svg viewBox="0 0 200 160" width="100%" height="100%">
+          <rect x="25" y="30" width="150" height="95" fill="rgba(56, 189, 248, 0.15)" stroke="#38bdf8" stroke-dasharray="3,3" />
+          <rect x="40" y="30" width="120" height="45" rx="4" fill="#334155" stroke="#64748b" stroke-width="2" />
+          <text x="100" y="58" fill="#f8fafc" font-size="11" text-anchor="middle" font-family="sans-serif">2.40 x 0.90m</text>
+          <text x="100" y="100" fill="#38bdf8" font-size="9" text-anchor="middle" font-family="sans-serif">Clearance 0.80m</text>
+        </svg>`
+      },
+      {
+        id: "DINING_4SEAT",
+        name: "โต๊ะอาหาร 4 ที่นั่ง (Dining Table 4 Seats)",
+        category: "dining",
+        dims: "1.40 × 0.90 × 0.75 ม.",
+        clearance: "รอบด้าน 0.80 ม. (ดึงเก้าอี้และเสิร์ฟ)",
+        minArea: "7.50 ตร.ม.",
+        ref: "Panero & Zelnik, p. 160",
+        svg: `<svg viewBox="0 0 200 160" width="100%" height="100%">
+          <rect x="25" y="15" width="150" height="130" fill="rgba(56, 189, 248, 0.15)" stroke="#38bdf8" stroke-dasharray="3,3" />
+          <rect x="65" y="45" width="70" height="70" rx="3" fill="#334155" stroke="#64748b" stroke-width="2" />
+          <circle cx="100" cy="30" r="10" fill="#475569" />
+          <circle cx="100" cy="130" r="10" fill="#475569" />
+          <circle cx="50" cy="80" r="10" fill="#475569" />
+          <circle cx="150" cy="80" r="10" fill="#475569" />
+          <text x="100" y="85" fill="#f8fafc" font-size="10" text-anchor="middle" font-family="sans-serif">1.40 x 0.90m</text>
+        </svg>`
+      },
+      {
+        id: "SAN_WC_SET",
+        name: "โถสุขภัณฑ์มาตรฐาน (Water Closet)",
+        category: "sanitary",
+        dims: "0.45 × 0.70 × 0.80 ม.",
+        clearance: "หน้า 0.60 ม. / ซ้าย-ขวา 0.25 ม.",
+        minArea: "1.25 ตร.ม.",
+        ref: "Panero & Zelnik, p. 210",
+        svg: `<svg viewBox="0 0 200 160" width="100%" height="100%">
+          <rect x="50" y="25" width="100" height="110" fill="rgba(56, 189, 248, 0.15)" stroke="#38bdf8" stroke-dasharray="3,3" />
+          <rect x="75" y="25" width="50" height="25" rx="2" fill="#475569" />
+          <ellipse cx="100" cy="75" rx="22" ry="28" fill="#334155" stroke="#64748b" stroke-width="2" />
+          <text x="100" y="79" fill="#f8fafc" font-size="10" text-anchor="middle" font-family="sans-serif">0.45 x 0.70m</text>
+          <text x="100" y="125" fill="#38bdf8" font-size="9" text-anchor="middle" font-family="sans-serif">Clearance 0.60m</text>
+        </svg>`
+      },
+      {
+        id: "LAW_MR55_VENT",
+        name: "ช่องเปิดแสง-ลมธรรมชาติ ≥ 10% (MR 55 ข้อ 51)",
+        category: "regulation",
+        dims: "อัตราส่วน ≥ 10% ของพื้นที่ห้อง",
+        clearance: "ต้องเปิดสู่อากาศภายนอกโดยตรง",
+        minArea: "Net Floor Area × 0.10",
+        ref: "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ข้อ 51",
+        svg: `<svg viewBox="0 0 200 160" width="100%" height="100%">
+          <rect x="40" y="30" width="120" height="100" fill="none" stroke="#10b981" stroke-width="2" />
+          <rect x="80" y="60" width="40" height="40" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-dasharray="2,2" />
+          <text x="100" y="50" fill="#f8fafc" font-size="11" text-anchor="middle" font-family="sans-serif">Floor Area (100%)</text>
+          <text x="100" y="85" fill="#10b981" font-size="11" font-weight="bold" text-anchor="middle" font-family="sans-serif">≥ 10%</text>
+          <text x="100" y="118" fill="#94a3b8" font-size="9" text-anchor="middle" font-family="sans-serif">Window Area</text>
+        </svg>`
+      }
+    ];
+
+    function renderCards(items) {
+      const grid = document.getElementById("catalogGrid");
+      grid.innerHTML = items.map(item => `
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">${item.name}</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); font-family: monospace;">${item.id}</div>
+            </div>
+            <span class="card-category">${item.category}</span>
+          </div>
+          <div class="diagram-container">
+            ${item.svg}
+          </div>
+          <table class="metrics-table">
+            <tr><td>มิติ (Dimensions):</td><td>${item.dims}</td></tr>
+            <tr><td>ระยะเผื่อ (Clearance):</td><td>${item.clearance}</td></tr>
+            <tr><td>พื้นที่สุทธิขั้นต่ำ:</td><td>${item.minArea}</td></tr>
+            <tr><td>แหล่งอ้างอิง:</td><td>${item.ref}</td></tr>
+          </table>
+        </div>
+      `).join("");
+    }
+
+    let currentCategory = "all";
+
+    function filterData() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const filtered = sampleCatalog.filter(item => {
+        const matchesCategory = currentCategory === "all" || item.category === currentCategory;
+        const matchesQuery = item.name.toLowerCase().includes(query) ||
+                             item.id.toLowerCase().includes(query) ||
+                             item.ref.toLowerCase().includes(query);
+        return matchesCategory && matchesQuery;
+      });
+      renderCards(filtered);
+    }
+
+    function switchCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
+      event.target.classList.add("active");
+      filterData();
+    }
+
+    document.getElementById("searchInput").addEventListener("input", filterData);
+
+    // Initial render
+    renderCards(sampleCatalog);
+  </script>
+</body>
+</html>
