@@ -1,0 +1,74 @@
+schema: "debim-standards/regulation/v1.0"
+jurisdiction: "TH"
+regulation_id: "TH-SETBACKS-2543"
+title: "ข้อกำหนดระยะร่นแนวเขตที่ดินและถนนสาธารณะตามกฎหมายควบคุมอาคาร"
+title_en: "Property Boundary and Public Road Setback Rulesets"
+description: "มาตรฐานระยะร่นของอาคารจากแนวเขตที่ดินข้างเคียงและแนวถนนสาธารณะตามกฎกระทรวงและข้อบัญญัติท้องถิ่น"
+
+clauses:
+  CLAUSE_PROPERTY_SETBACK_BLANK_WALL:
+    clause_id: "CLAUSE-PROPERTY-SETBACK-BLANK"
+    title: "ระยะร่นผนังทึบจากแนวเขตที่ดิน"
+    title_en: "Property Boundary Setback for Blank Wall"
+    description: "ผนังอาคารที่ไม่มีช่องเปิด ช่องแสง หรือระเบียง ต้องมีระยะร่นจากแนวเขตที่ดินข้างเคียงไม่น้อยกว่า 0.50 เมตร"
+    reference: "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ข้อ 50"
+    tags:
+      - "setback"
+      - "property_boundary"
+      - "blank_wall"
+    metrics:
+      - metric_id: "METRIC-SETBACK-BLANK-WALL"
+        name: "Blank Wall Minimum Setback Distance"
+        parameter: "blank_wall_setback"
+        unit: "meters"
+        operator: ">="
+        threshold: 0.50
+        remediation:
+          message_th: "เว้นระยะร่นผนังทึบจากแนวเขตที่ดินอย่างน้อย 0.50 เมตร หรือได้รับการยินยอมเป็นหนังสือจากเจ้าของที่ดินข้างเคียง"
+          message_en: "Increase setback distance of blank wall to at least 0.50m from property boundary"
+          suggested_action: "INCREASE_SETBACK_BLANK_WALL"
+
+  CLAUSE_PROPERTY_SETBACK_OPENING:
+    clause_id: "CLAUSE-PROPERTY-SETBACK-OPENING"
+    title: "ระยะร่นผนังมีช่องเปิดหรือระเบียงจากแนวเขตที่ดิน"
+    title_en: "Property Boundary Setback for Openings and Balconies"
+    description: "ผนังอาคารที่มีประตู หน้าต่าง ช่องแสง หรือระเบียง (ความสูงอาคารไม่เกิน 9 เมตร) ต้องร่นจากแนวเขตที่ดินไม่น้อยกว่า 2.00 เมตร"
+    reference: "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ข้อ 50"
+    tags:
+      - "setback"
+      - "property_boundary"
+      - "opening"
+      - "balcony"
+    metrics:
+      - metric_id: "METRIC-SETBACK-OPENING-WALL"
+        name: "Opening/Balcony Wall Minimum Setback Distance"
+        parameter: "opening_wall_setback"
+        unit: "meters"
+        operator: ">="
+        threshold: 2.00
+        remediation:
+          message_th: "เว้นระยะร่นผนังที่มีช่องเปิดหรือระเบียงจากแนวเขตที่ดินอย่างน้อย 2.00 เมตร"
+          message_en: "Increase setback distance of wall with openings or balcony to at least 2.00m from property boundary"
+          suggested_action: "INCREASE_SETBACK_OPENING_WALL"
+
+  CLAUSE_ROAD_SETBACK_STANDARD:
+    clause_id: "CLAUSE-ROAD-SETBACK"
+    title: "ระยะร่นอาคารจากแนวถนนสาธารณะ"
+    title_en: "Public Road Minimum Setback Distance"
+    description: "ระยะร่นของอาคารจากศูนย์กลางถนนสาธารณะตามขนาดความกว้างถนน"
+    reference: "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ข้อ 41"
+    tags:
+      - "setback"
+      - "public_road"
+      - "road_centerline"
+    metrics:
+      - metric_id: "METRIC-SETBACK-PUBLIC-ROAD-NARROW"
+        name: "Public Road Setback Distance (Road width < 6m)"
+        parameter: "road_centerline_setback"
+        unit: "meters"
+        operator: ">="
+        threshold: 3.00
+        remediation:
+          message_th: "เว้นระยะร่นจากกึ่งกลางถนนสาธารณะไม่น้อยกว่า 3.00 เมตร"
+          message_en: "Increase setback distance from public road centerline to at least 3.00m"
+          suggested_action: "INCREASE_ROAD_SETBACK"
