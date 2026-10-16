@@ -1,0 +1,1539 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-10-16T20:12:05.585960+00:00",
+  "summary": {
+    "human_scale_count": 24,
+    "regulation_rulesets_count": 2,
+    "regulation_clauses_count": 7,
+    "materials_count": 19
+  },
+  "human_scale": [
+    {
+      "id": "FUR-BED-KING-6FT",
+      "name": "เตียงนอนขนาด King Size (6 ฟุต)",
+      "name_en": "King Size Bed 6ft",
+      "category": "bedroom",
+      "reference": "Neufert Architects' Data 4th Ed, p. 254; Panero & Zelnik Human Dimension, p. 142",
+      "dimensions": {
+        "width": 1.8,
+        "depth": 2.0,
+        "height": 0.9
+      },
+      "clearance": {
+        "front": 0.8,
+        "back": 0.0,
+        "left": 0.6,
+        "right": 0.6
+      },
+      "footprint_area": 3.6,
+      "total_space_area": 8.4,
+      "tags": [
+        "bedroom",
+        "bed",
+        "sleeping",
+        "king"
+      ],
+      "item_key": "BED_KING_6FT",
+      "catalog_category": "bedroom",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for bedroom spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "FUR-BED-QUEEN-5FT",
+      "name": "เตียงนอนขนาด Queen Size (5 ฟุต)",
+      "name_en": "Queen Size Bed 5ft",
+      "category": "bedroom",
+      "reference": "Neufert Architects' Data 4th Ed, p. 254; Panero & Zelnik Human Dimension, p. 142",
+      "dimensions": {
+        "width": 1.5,
+        "depth": 2.0,
+        "height": 0.9
+      },
+      "clearance": {
+        "front": 0.8,
+        "back": 0.0,
+        "left": 0.6,
+        "right": 0.6
+      },
+      "footprint_area": 3.0,
+      "total_space_area": 7.56,
+      "tags": [
+        "bedroom",
+        "bed",
+        "sleeping",
+        "queen"
+      ],
+      "item_key": "BED_QUEEN_5FT",
+      "catalog_category": "bedroom",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for bedroom spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "FUR-BED-SINGLE-35FT",
+      "name": "เตียงนอนขนาด Single (3.5 ฟุต)",
+      "name_en": "Single Bed 3.5ft",
+      "category": "bedroom",
+      "reference": "Neufert Architects' Data 4th Ed, p. 254; Panero & Zelnik Human Dimension, p. 141",
+      "dimensions": {
+        "width": 1.05,
+        "depth": 2.0,
+        "height": 0.9
+      },
+      "clearance": {
+        "front": 0.8,
+        "back": 0.0,
+        "left": 0.6,
+        "right": 0.6
+      },
+      "footprint_area": 2.1,
+      "total_space_area": 6.3,
+      "tags": [
+        "bedroom",
+        "bed",
+        "sleeping",
+        "single"
+      ],
+      "item_key": "BED_SINGLE_35FT",
+      "catalog_category": "bedroom",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for bedroom spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "FUR-WARDROBE-12M",
+      "name": "ตู้เสื้อผ้า 1.20 เมตร",
+      "name_en": "Wardrobe 1.2m",
+      "category": "bedroom",
+      "reference": "Neufert Architects' Data 4th Ed, p. 255; Panero & Zelnik Human Dimension, p. 145",
+      "dimensions": {
+        "width": 1.2,
+        "depth": 0.6,
+        "height": 2.1
+      },
+      "clearance": {
+        "front": 0.9,
+        "back": 0.0,
+        "left": 0.0,
+        "right": 0.0
+      },
+      "footprint_area": 0.72,
+      "total_space_area": 1.8,
+      "tags": [
+        "bedroom",
+        "storage",
+        "wardrobe"
+      ],
+      "item_key": "WARDROBE_12M",
+      "catalog_category": "bedroom",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for bedroom spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "FUR-WARDROBE-18M",
+      "name": "ตู้เสื้อผ้า 1.80 เมตร",
+      "name_en": "Wardrobe 1.8m",
+      "category": "bedroom",
+      "reference": "Neufert Architects' Data 4th Ed, p. 255; Panero & Zelnik Human Dimension, p. 145",
+      "dimensions": {
+        "width": 1.8,
+        "depth": 0.6,
+        "height": 2.1
+      },
+      "clearance": {
+        "front": 0.9,
+        "back": 0.0,
+        "left": 0.0,
+        "right": 0.0
+      },
+      "footprint_area": 1.08,
+      "total_space_area": 2.7,
+      "tags": [
+        "bedroom",
+        "storage",
+        "wardrobe"
+      ],
+      "item_key": "WARDROBE_18M",
+      "catalog_category": "bedroom",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for bedroom spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "FUR-WARDROBE-24M",
+      "name": "ตู้เสื้อผ้า 2.40 เมตร",
+      "name_en": "Wardrobe 2.4m",
+      "category": "bedroom",
+      "reference": "Neufert Architects' Data 4th Ed, p. 255; Panero & Zelnik Human Dimension, p. 145",
+      "dimensions": {
+        "width": 2.4,
+        "depth": 0.6,
+        "height": 2.1
+      },
+      "clearance": {
+        "front": 0.9,
+        "back": 0.0,
+        "left": 0.0,
+        "right": 0.0
+      },
+      "footprint_area": 1.44,
+      "total_space_area": 3.6,
+      "tags": [
+        "bedroom",
+        "storage",
+        "wardrobe"
+      ],
+      "item_key": "WARDROBE_24M",
+      "catalog_category": "bedroom",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for bedroom spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "FUR-DRESSING-TABLE",
+      "name": "โต๊ะเครื่องแป้ง",
+      "name_en": "Dressing Table",
+      "category": "bedroom",
+      "reference": "Neufert Architects' Data 4th Ed, p. 256; Panero & Zelnik Human Dimension, p. 146",
+      "dimensions": {
+        "width": 1.0,
+        "depth": 0.45,
+        "height": 0.75
+      },
+      "clearance": {
+        "front": 0.75,
+        "back": 0.0,
+        "left": 0.0,
+        "right": 0.0
+      },
+      "footprint_area": 0.45,
+      "total_space_area": 1.2,
+      "tags": [
+        "bedroom",
+        "vanity",
+        "dressing"
+      ],
+      "item_key": "DRESSING_TABLE",
+      "catalog_category": "bedroom",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for bedroom spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "CIR-CORRIDOR-SINGLE",
+      "name": "ทางเดินคนเดียว (0.90 ม.)",
+      "name_en": "Single Person Corridor (0.90m)",
+      "category": "circulation",
+      "reference": "Neufert Architects' Data 4th Ed, p. 182; Panero & Zelnik Human Dimension, p. 88",
+      "dimensions": {
+        "width": 0.9,
+        "depth": 1.0,
+        "height": 2.1
+      },
+      "clearance": {
+        "front": 0.0,
+        "back": 0.0,
+        "left": 0.0,
+        "right": 0.0
+      },
+      "footprint_area": 0.9,
+      "total_space_area": 0.9,
+      "tags": [
+        "circulation",
+        "corridor",
+        "single",
+        "passageway"
+      ],
+      "item_key": "CORRIDOR_SINGLE",
+      "catalog_category": "circulation",
+      "catalog_description": "Standard human scale circulation envelopes and passageway standards based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "CIR-CORRIDOR-TWO-PERSON",
+      "name": "ทางเดินสวนกันสองคน (1.20 ม.)",
+      "name_en": "Two-Person Passing Corridor (1.20m)",
+      "category": "circulation",
+      "reference": "Neufert Architects' Data 4th Ed, p. 182; Panero & Zelnik Human Dimension, p. 89",
+      "dimensions": {
+        "width": 1.2,
+        "depth": 1.0,
+        "height": 2.1
+      },
+      "clearance": {
+        "front": 0.0,
+        "back": 0.0,
+        "left": 0.0,
+        "right": 0.0
+      },
+      "footprint_area": 1.2,
+      "total_space_area": 1.2,
+      "tags": [
+        "circulation",
+        "corridor",
+        "passing",
+        "two-person"
+      ],
+      "item_key": "CORRIDOR_TWO_PERSON",
+      "catalog_category": "circulation",
+      "catalog_description": "Standard human scale circulation envelopes and passageway standards based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "CIR-WHEELCHAIR-TURNAROUND",
+      "name": "พื้นที่หมุนตัวรถเข็นผู้พิกาต/วีลแชร์ (1.50 ม.)",
+      "name_en": "Wheelchair Turnaround Space (1.50m)",
+      "category": "circulation",
+      "reference": "Neufert Architects' Data 4th Ed, p. 38; Panero & Zelnik Human Dimension, p. 94",
+      "dimensions": {
+        "width": 1.5,
+        "depth": 1.5,
+        "height": 2.1
+      },
+      "clearance": {
+        "front": 0.0,
+        "back": 0.0,
+        "left": 0.0,
+        "right": 0.0
+      },
+      "footprint_area": 2.25,
+      "total_space_area": 2.25,
+      "tags": [
+        "circulation",
+        "accessibility",
+        "wheelchair",
+        "turnaround",
+        "ada"
+      ],
+      "item_key": "WHEELCHAIR_TURNAROUND",
+      "catalog_category": "circulation",
+      "catalog_description": "Standard human scale circulation envelopes and passageway standards based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "FUR-DINING-TABLE-4SEAT",
+      "name": "โต๊ะรับประทานอาหาร 4 ที่นั่ง",
+      "name_en": "Dining Table 4-Seat",
+      "category": "dining",
+      "reference": "Neufert Architects' Data 4th Ed, p. 294; Panero & Zelnik Human Dimension, p. 136",
+      "dimensions": {
+        "width": 1.2,
+        "depth": 0.8,
+        "height": 0.75
+      },
+      "clearance": {
+        "front": 0.9,
+        "back": 0.9,
+        "left": 0.9,
+        "right": 0.9
+      },
+      "footprint_area": 0.96,
+      "total_space_area": 7.8,
+      "tags": [
+        "dining",
+        "table",
+        "4-seat"
+      ],
+      "item_key": "DINING_TABLE_4SEAT",
+      "catalog_category": "dining",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for dining spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "FUR-DINING-TABLE-6SEAT",
+      "name": "โต๊ะรับประทานอาหาร 6 ที่นั่ง",
+      "name_en": "Dining Table 6-Seat",
+      "category": "dining",
+      "reference": "Neufert Architects' Data 4th Ed, p. 294; Panero & Zelnik Human Dimension, p. 136",
+      "dimensions": {
+        "width": 1.8,
+        "depth": 0.9,
+        "height": 0.75
+      },
+      "clearance": {
+        "front": 0.9,
+        "back": 0.9,
+        "left": 0.9,
+        "right": 0.9
+      },
+      "footprint_area": 1.62,
+      "total_space_area": 9.72,
+      "tags": [
+        "dining",
+        "table",
+        "6-seat"
+      ],
+      "item_key": "DINING_TABLE_6SEAT",
+      "catalog_category": "dining",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for dining spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "FUR-DINING-TABLE-8SEAT",
+      "name": "โต๊ะรับประทานอาหาร 8 ที่นั่ง",
+      "name_en": "Dining Table 8-Seat",
+      "category": "dining",
+      "reference": "Neufert Architects' Data 4th Ed, p. 294; Panero & Zelnik Human Dimension, p. 137",
+      "dimensions": {
+        "width": 2.4,
+        "depth": 1.0,
+        "height": 0.75
+      },
+      "clearance": {
+        "front": 0.9,
+        "back": 0.9,
+        "left": 0.9,
+        "right": 0.9
+      },
+      "footprint_area": 2.4,
+      "total_space_area": 11.76,
+      "tags": [
+        "dining",
+        "table",
+        "8-seat"
+      ],
+      "item_key": "DINING_TABLE_8SEAT",
+      "catalog_category": "dining",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for dining spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "FUR-DINING-CHAIR",
+      "name": "เก้าอี้รับประทานอาหาร",
+      "name_en": "Dining Chair",
+      "category": "dining",
+      "reference": "Neufert Architects' Data 4th Ed, p. 294; Panero & Zelnik Human Dimension, p. 135",
+      "dimensions": {
+        "width": 0.5,
+        "depth": 0.55,
+        "height": 0.85
+      },
+      "clearance": {
+        "front": 0.2,
+        "back": 0.6,
+        "left": 0.15,
+        "right": 0.15
+      },
+      "footprint_area": 0.275,
+      "total_space_area": 1.08,
+      "tags": [
+        "dining",
+        "chair",
+        "seating"
+      ],
+      "item_key": "DINING_CHAIR",
+      "catalog_category": "dining",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for dining spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "FUR-SOFA-2SEAT",
+      "name": "โซฟา 2 ที่นั่ง",
+      "name_en": "2-Seat Sofa",
+      "category": "living",
+      "reference": "Neufert Architects' Data 4th Ed, p. 288; Panero & Zelnik Human Dimension, p. 129",
+      "dimensions": {
+        "width": 1.5,
+        "depth": 0.85,
+        "height": 0.85
+      },
+      "clearance": {
+        "front": 0.45,
+        "back": 0.0,
+        "left": 0.2,
+        "right": 0.2
+      },
+      "footprint_area": 1.275,
+      "total_space_area": 2.47,
+      "tags": [
+        "living",
+        "sofa",
+        "seating"
+      ],
+      "item_key": "SOFA_2SEAT",
+      "catalog_category": "living",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for living room spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "FUR-SOFA-3SEAT",
+      "name": "โซฟา 3 ที่นั่ง",
+      "name_en": "3-Seat Sofa",
+      "category": "living",
+      "reference": "Neufert Architects' Data 4th Ed, p. 288; Panero & Zelnik Human Dimension, p. 129",
+      "dimensions": {
+        "width": 2.1,
+        "depth": 0.85,
+        "height": 0.85
+      },
+      "clearance": {
+        "front": 0.45,
+        "back": 0.0,
+        "left": 0.2,
+        "right": 0.2
+      },
+      "footprint_area": 1.785,
+      "total_space_area": 3.25,
+      "tags": [
+        "living",
+        "sofa",
+        "seating"
+      ],
+      "item_key": "SOFA_3SEAT",
+      "catalog_category": "living",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for living room spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "FUR-SOFA-LSHAPE",
+      "name": "โซฟาทรงตัวแอล (L-Shape)",
+      "name_en": "L-Shape Sofa",
+      "category": "living",
+      "reference": "Neufert Architects' Data 4th Ed, p. 288; Panero & Zelnik Human Dimension, p. 130",
+      "dimensions": {
+        "width": 2.5,
+        "depth": 1.6,
+        "height": 0.85
+      },
+      "clearance": {
+        "front": 0.5,
+        "back": 0.0,
+        "left": 0.2,
+        "right": 0.2
+      },
+      "footprint_area": 4.0,
+      "total_space_area": 6.09,
+      "tags": [
+        "living",
+        "sofa",
+        "seating",
+        "l-shape"
+      ],
+      "item_key": "SOFA_LSHAPE",
+      "catalog_category": "living",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for living room spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "FUR-COFFEE-TABLE",
+      "name": "โต๊ะกาแฟ / โต๊ะกลาง",
+      "name_en": "Coffee Table",
+      "category": "living",
+      "reference": "Neufert Architects' Data 4th Ed, p. 289; Panero & Zelnik Human Dimension, p. 131",
+      "dimensions": {
+        "width": 1.2,
+        "depth": 0.6,
+        "height": 0.45
+      },
+      "clearance": {
+        "front": 0.45,
+        "back": 0.45,
+        "left": 0.3,
+        "right": 0.3
+      },
+      "footprint_area": 0.72,
+      "total_space_area": 2.7,
+      "tags": [
+        "living",
+        "table",
+        "coffee"
+      ],
+      "item_key": "COFFEE_TABLE",
+      "catalog_category": "living",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for living room spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "FUR-TV-CONSOLE",
+      "name": "ตู้และตู้วางทีวี",
+      "name_en": "TV Console",
+      "category": "living",
+      "reference": "Neufert Architects' Data 4th Ed, p. 289; Panero & Zelnik Human Dimension, p. 132",
+      "dimensions": {
+        "width": 1.8,
+        "depth": 0.45,
+        "height": 0.55
+      },
+      "clearance": {
+        "front": 0.8,
+        "back": 0.0,
+        "left": 0.0,
+        "right": 0.0
+      },
+      "footprint_area": 0.81,
+      "total_space_area": 2.25,
+      "tags": [
+        "living",
+        "tv",
+        "console",
+        "media"
+      ],
+      "item_key": "TV_CONSOLE",
+      "catalog_category": "living",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for living room spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "FUR-ARMCHAIR",
+      "name": "เก้าอี้อาร์มแชร์",
+      "name_en": "Armchair",
+      "category": "living",
+      "reference": "Neufert Architects' Data 4th Ed, p. 288; Panero & Zelnik Human Dimension, p. 128",
+      "dimensions": {
+        "width": 0.85,
+        "depth": 0.85,
+        "height": 0.85
+      },
+      "clearance": {
+        "front": 0.5,
+        "back": 0.1,
+        "left": 0.2,
+        "right": 0.2
+      },
+      "footprint_area": 0.7225,
+      "total_space_area": 1.8125,
+      "tags": [
+        "living",
+        "chair",
+        "armchair",
+        "seating"
+      ],
+      "item_key": "ARMCHAIR",
+      "catalog_category": "living",
+      "catalog_description": "Standard human scale furniture dimensions and clearance envelopes for living room spaces based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "SAN-WATER-CLOSET",
+      "name": "โถสุขภัณฑ์ (WC)",
+      "name_en": "Water Closet (WC)",
+      "category": "sanitary",
+      "reference": "Neufert Architects' Data 4th Ed, p. 332; Panero & Zelnik Human Dimension, p. 216",
+      "dimensions": {
+        "width": 0.45,
+        "depth": 0.7,
+        "height": 0.75
+      },
+      "clearance": {
+        "front": 0.8,
+        "back": 0.0,
+        "left": 0.25,
+        "right": 0.25
+      },
+      "footprint_area": 0.315,
+      "total_space_area": 1.425,
+      "tags": [
+        "sanitary",
+        "wc",
+        "toilet"
+      ],
+      "item_key": "WATER_CLOSET",
+      "catalog_category": "sanitary",
+      "catalog_description": "Standard human scale sanitary fixture dimensions and activity clearance envelopes based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "SAN-WASHBASIN-VANITY",
+      "name": "อ่างล้างหน้าและเคาน์เตอร์",
+      "name_en": "Washbasin Vanity",
+      "category": "sanitary",
+      "reference": "Neufert Architects' Data 4th Ed, p. 332; Panero & Zelnik Human Dimension, p. 218",
+      "dimensions": {
+        "width": 0.8,
+        "depth": 0.55,
+        "height": 0.85
+      },
+      "clearance": {
+        "front": 0.75,
+        "back": 0.0,
+        "left": 0.1,
+        "right": 0.1
+      },
+      "footprint_area": 0.44,
+      "total_space_area": 1.3,
+      "tags": [
+        "sanitary",
+        "washbasin",
+        "vanity",
+        "basin"
+      ],
+      "item_key": "WASHBASIN_VANITY",
+      "catalog_category": "sanitary",
+      "catalog_description": "Standard human scale sanitary fixture dimensions and activity clearance envelopes based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "SAN-SHOWER-BOX-090",
+      "name": "ฉากกั้นอาบน้ำ 0.90x0.90 ม.",
+      "name_en": "Shower Box 0.90x0.90m",
+      "category": "sanitary",
+      "reference": "Neufert Architects' Data 4th Ed, p. 333; Panero & Zelnik Human Dimension, p. 220",
+      "dimensions": {
+        "width": 0.9,
+        "depth": 0.9,
+        "height": 2.0
+      },
+      "clearance": {
+        "front": 0.7,
+        "back": 0.0,
+        "left": 0.0,
+        "right": 0.0
+      },
+      "footprint_area": 0.81,
+      "total_space_area": 1.44,
+      "tags": [
+        "sanitary",
+        "shower",
+        "bath"
+      ],
+      "item_key": "SHOWER_BOX_090",
+      "catalog_category": "sanitary",
+      "catalog_description": "Standard human scale sanitary fixture dimensions and activity clearance envelopes based on Neufert and Panero & Zelnik."
+    },
+    {
+      "id": "SAN-BATHTUB-STANDARD",
+      "name": "อ่างอาบน้ำมาตรฐาน",
+      "name_en": "Standard Bathtub",
+      "category": "sanitary",
+      "reference": "Neufert Architects' Data 4th Ed, p. 333; Panero & Zelnik Human Dimension, p. 222",
+      "dimensions": {
+        "width": 1.7,
+        "depth": 0.75,
+        "height": 0.55
+      },
+      "clearance": {
+        "front": 0.8,
+        "back": 0.0,
+        "left": 0.0,
+        "right": 0.0
+      },
+      "footprint_area": 1.275,
+      "total_space_area": 2.635,
+      "tags": [
+        "sanitary",
+        "bathtub",
+        "bath"
+      ],
+      "item_key": "BATHTUB_STANDARD",
+      "catalog_category": "sanitary",
+      "catalog_description": "Standard human scale sanitary fixture dimensions and activity clearance envelopes based on Neufert and Panero & Zelnik."
+    }
+  ],
+  "regulations": [
+    {
+      "regulation_id": "TH-MR55-2543",
+      "title": "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ออกตามความในพระราชบัญญัติควบคุมอาคาร พ.ศ. 2522",
+      "title_en": "Ministerial Regulation No. 55 (B.E. 2543) under Building Control Act B.E. 2522",
+      "description": "ข้อกำหนดและมาตรฐานสถาปัตยกรรมสำหรับอาคารพักอาศัยและอาคารทั่วไปตามกฎหมายควบคุมอาคารไทย",
+      "jurisdiction": "TH",
+      "clauses": [
+        {
+          "clause_id": "CLAUSE-51",
+          "title": "ข้อ 51 ช่องเปิดแสงธรรมชาติและการระบายอากาศ",
+          "title_en": "Clause 51 Natural Light and Ventilation Openings",
+          "description": "อาคารอยู่อาศัยต้องมีช่องเปิดด้านนอกอาคารเพื่อแสงสว่างและการระบายอากาศไม่น้อยกว่าร้อยละ 10 ของพื้นที่ห้อง",
+          "reference": "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ข้อ 51",
+          "tags": [
+            "lighting",
+            "ventilation",
+            "window",
+            "habitable"
+          ],
+          "metrics": [
+            {
+              "metric_id": "METRIC-LIGHT-VENT-RATIO",
+              "name": "Natural Light and Ventilation Window Area Ratio",
+              "parameter": "opening_area_ratio",
+              "unit": "ratio",
+              "operator": ">=",
+              "threshold": 0.1,
+              "remediation": {
+                "message_th": "เพิ่มขนาดหน้าต่างหรือช่องเปิดระบายอากาศให้ได้พื้นที่ไม่น้อยกว่า 10% ของพื้นที่ห้อง",
+                "message_en": "Increase window or ventilation opening area to at least 10% of net floor area",
+                "suggested_action": "INCREASE_WINDOW_AREA"
+              }
+            }
+          ],
+          "clause_key": "CLAUSE_51_LIGHT_VENTILATION",
+          "regulation_id": "TH-MR55-2543",
+          "regulation_title": "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ออกตามความในพระราชบัญญัติควบคุมอาคาร พ.ศ. 2522"
+        },
+        {
+          "clause_id": "CLAUSE-22",
+          "title": "ข้อ 22 บันไดของอาคารอยู่อาศัย",
+          "title_en": "Clause 22 Residential Staircase Design",
+          "description": "ข้อกำหนดมิติบันได ได้แก่ ระยะลูกตั้ง ระยะลูกนอน ความกว้างสุทธิ และความสูงระยะดิ่ง (Headroom)",
+          "reference": "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ข้อ 22",
+          "tags": [
+            "stair",
+            "circulation",
+            "safety"
+          ],
+          "metrics": [
+            {
+              "metric_id": "METRIC-STAIR-RISER",
+              "name": "Stair Maximum Riser Height",
+              "parameter": "riser_height",
+              "unit": "meters",
+              "operator": "<=",
+              "threshold": 0.2,
+              "remediation": {
+                "message_th": "ลดความสูงลูกตั้งบันไดให้ไม่เกิน 0.20 เมตร",
+                "message_en": "Reduce stair riser height to not exceed 0.20m",
+                "suggested_action": "REDUCE_RISER_HEIGHT"
+              }
+            },
+            {
+              "metric_id": "METRIC-STAIR-TREAD",
+              "name": "Stair Minimum Tread Width",
+              "parameter": "tread_width",
+              "unit": "meters",
+              "operator": ">=",
+              "threshold": 0.22,
+              "remediation": {
+                "message_th": "เพิ่มความกว้างลูกนอนบันไดให้ไม่น้อยกว่า 0.22 เมตร",
+                "message_en": "Increase stair tread width to at least 0.22m",
+                "suggested_action": "INCREASE_TREAD_WIDTH"
+              }
+            },
+            {
+              "metric_id": "METRIC-STAIR-CLEAR-WIDTH",
+              "name": "Stair Minimum Clear Width",
+              "parameter": "clear_width",
+              "unit": "meters",
+              "operator": ">=",
+              "threshold": 0.9,
+              "remediation": {
+                "message_th": "ขยายความกว้างสุทธิของบันไดให้ไม่น้อยกว่า 0.90 เมตร",
+                "message_en": "Increase stair clear width to at least 0.90m",
+                "suggested_action": "EXPAND_STAIR_WIDTH"
+              }
+            },
+            {
+              "metric_id": "METRIC-STAIR-HEADROOM",
+              "name": "Stair Minimum Headroom",
+              "parameter": "headroom_height",
+              "unit": "meters",
+              "operator": ">=",
+              "threshold": 2.0,
+              "remediation": {
+                "message_th": "เพิ่มระยะดิ่งเหนือบันไดให้ไม่น้อยกว่า 2.00 เมตร",
+                "message_en": "Increase vertical headroom clear height above stair to at least 2.00m",
+                "suggested_action": "INCREASE_HEADROOM"
+              }
+            }
+          ],
+          "clause_key": "CLAUSE_22_STAIR_DESIGN",
+          "regulation_id": "TH-MR55-2543",
+          "regulation_title": "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ออกตามความในพระราชบัญญัติควบคุมอาคาร พ.ศ. 2522"
+        },
+        {
+          "clause_id": "CLAUSE-33",
+          "title": "ข้อ 33 ความสูงสุทธิของห้อง",
+          "title_en": "Clause 33 Minimum Room Clear Height",
+          "description": "ระยะความสูงสุทธิจากพื้นถึงเพดานสำหรับห้องอยู่อาศัยและห้องน้ำ",
+          "reference": "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ข้อ 33",
+          "tags": [
+            "clear_height",
+            "ceiling",
+            "habitable",
+            "bathroom"
+          ],
+          "metrics": [
+            {
+              "metric_id": "METRIC-HABITABLE-CLEAR-HEIGHT",
+              "name": "Habitable Space Minimum Clear Height",
+              "parameter": "habitable_clear_height",
+              "unit": "meters",
+              "operator": ">=",
+              "threshold": 2.6,
+              "remediation": {
+                "message_th": "เพิ่มระยะความสูงพื้นถึงเพดานห้องอยู่อาศัยให้ไม่น้อยกว่า 2.60 เมตร",
+                "message_en": "Increase ceiling clear height in habitable room to at least 2.60m",
+                "suggested_action": "RAISE_CEILING_HEIGHT"
+              }
+            },
+            {
+              "metric_id": "METRIC-BATHROOM-CLEAR-HEIGHT",
+              "name": "Bathroom Minimum Clear Height",
+              "parameter": "bathroom_clear_height",
+              "unit": "meters",
+              "operator": ">=",
+              "threshold": 2.0,
+              "remediation": {
+                "message_th": "เพิ่มระยะความสูงพื้นถึงเพดานห้องน้ำให้ไม่น้อยกว่า 2.00 เมตร",
+                "message_en": "Increase ceiling clear height in bathroom to at least 2.00m",
+                "suggested_action": "RAISE_BATHROOM_CEILING"
+              }
+            }
+          ],
+          "clause_key": "CLAUSE_33_ROOM_CLEAR_HEIGHT",
+          "regulation_id": "TH-MR55-2543",
+          "regulation_title": "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ออกตามความในพระราชบัญญัติควบคุมอาคาร พ.ศ. 2522"
+        },
+        {
+          "clause_id": "CLAUSE-40",
+          "title": "ข้อ 40 การลดระดับพื้นส่วนเปียกห้องน้ำ",
+          "title_en": "Clause 40 Wet Area Bathroom Floor Step Drop",
+          "description": "การลดระดับพื้นห้องน้ำหรือส่วนเปียกต่างระดับเพื่อป้องกันน้ำไหลเอิ่งล้น",
+          "reference": "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ข้อ 40",
+          "tags": [
+            "bathroom",
+            "wet_area",
+            "floor_drop",
+            "drainage"
+          ],
+          "metrics": [
+            {
+              "metric_id": "METRIC-BATHROOM-DROP-ELEVATION",
+              "name": "Wet Area Floor Drop Elevation",
+              "parameter": "drop_elevation",
+              "unit": "meters",
+              "operator": "<=",
+              "threshold": -0.1,
+              "remediation": {
+                "message_th": "ลดระดับพื้นส่วนเปียกห้องน้ำให้ต่ำกว่าพื้นทั่วไปอย่างน้อย 0.10 เมตร",
+                "message_en": "Lower wet area floor elevation by at least 0.10m step down relative to main floor",
+                "suggested_action": "DROP_BATHROOM_FLOOR"
+              }
+            }
+          ],
+          "clause_key": "CLAUSE_40_WET_AREA_FLOOR_DROP",
+          "regulation_id": "TH-MR55-2543",
+          "regulation_title": "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ออกตามความในพระราชบัญญัติควบคุมอาคาร พ.ศ. 2522"
+        }
+      ]
+    },
+    {
+      "regulation_id": "TH-SETBACKS-2543",
+      "title": "ข้อกำหนดระยะร่นแนวเขตที่ดินและถนนสาธารณะตามกฎหมายควบคุมอาคาร",
+      "title_en": "Property Boundary and Public Road Setback Rulesets",
+      "description": "มาตรฐานระยะร่นของอาคารจากแนวเขตที่ดินข้างเคียงและแนวถนนสาธารณะตามกฎกระทรวงและข้อบัญญัติท้องถิ่น",
+      "jurisdiction": "TH",
+      "clauses": [
+        {
+          "clause_id": "CLAUSE-PROPERTY-SETBACK-BLANK",
+          "title": "ระยะร่นผนังทึบจากแนวเขตที่ดิน",
+          "title_en": "Property Boundary Setback for Blank Wall",
+          "description": "ผนังอาคารที่ไม่มีช่องเปิด ช่องแสง หรือระเบียง ต้องมีระยะร่นจากแนวเขตที่ดินข้างเคียงไม่น้อยกว่า 0.50 เมตร",
+          "reference": "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ข้อ 50",
+          "tags": [
+            "setback",
+            "property_boundary",
+            "blank_wall"
+          ],
+          "metrics": [
+            {
+              "metric_id": "METRIC-SETBACK-BLANK-WALL",
+              "name": "Blank Wall Minimum Setback Distance",
+              "parameter": "blank_wall_setback",
+              "unit": "meters",
+              "operator": ">=",
+              "threshold": 0.5,
+              "remediation": {
+                "message_th": "เว้นระยะร่นผนังทึบจากแนวเขตที่ดินอย่างน้อย 0.50 เมตร หรือได้รับการยินยอมเป็นหนังสือจากเจ้าของที่ดินข้างเคียง",
+                "message_en": "Increase setback distance of blank wall to at least 0.50m from property boundary",
+                "suggested_action": "INCREASE_SETBACK_BLANK_WALL"
+              }
+            }
+          ],
+          "clause_key": "CLAUSE_PROPERTY_SETBACK_BLANK_WALL",
+          "regulation_id": "TH-SETBACKS-2543",
+          "regulation_title": "ข้อกำหนดระยะร่นแนวเขตที่ดินและถนนสาธารณะตามกฎหมายควบคุมอาคาร"
+        },
+        {
+          "clause_id": "CLAUSE-PROPERTY-SETBACK-OPENING",
+          "title": "ระยะร่นผนังมีช่องเปิดหรือระเบียงจากแนวเขตที่ดิน",
+          "title_en": "Property Boundary Setback for Openings and Balconies",
+          "description": "ผนังอาคารที่มีประตู หน้าต่าง ช่องแสง หรือระเบียง (ความสูงอาคารไม่เกิน 9 เมตร) ต้องร่นจากแนวเขตที่ดินไม่น้อยกว่า 2.00 เมตร",
+          "reference": "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ข้อ 50",
+          "tags": [
+            "setback",
+            "property_boundary",
+            "opening",
+            "balcony"
+          ],
+          "metrics": [
+            {
+              "metric_id": "METRIC-SETBACK-OPENING-WALL",
+              "name": "Opening/Balcony Wall Minimum Setback Distance",
+              "parameter": "opening_wall_setback",
+              "unit": "meters",
+              "operator": ">=",
+              "threshold": 2.0,
+              "remediation": {
+                "message_th": "เว้นระยะร่นผนังที่มีช่องเปิดหรือระเบียงจากแนวเขตที่ดินอย่างน้อย 2.00 เมตร",
+                "message_en": "Increase setback distance of wall with openings or balcony to at least 2.00m from property boundary",
+                "suggested_action": "INCREASE_SETBACK_OPENING_WALL"
+              }
+            }
+          ],
+          "clause_key": "CLAUSE_PROPERTY_SETBACK_OPENING",
+          "regulation_id": "TH-SETBACKS-2543",
+          "regulation_title": "ข้อกำหนดระยะร่นแนวเขตที่ดินและถนนสาธารณะตามกฎหมายควบคุมอาคาร"
+        },
+        {
+          "clause_id": "CLAUSE-ROAD-SETBACK",
+          "title": "ระยะร่นอาคารจากแนวถนนสาธารณะ",
+          "title_en": "Public Road Minimum Setback Distance",
+          "description": "ระยะร่นของอาคารจากศูนย์กลางถนนสาธารณะตามขนาดความกว้างถนน",
+          "reference": "กฎกระทรวง ฉบับที่ 55 (พ.ศ. 2543) ข้อ 41",
+          "tags": [
+            "setback",
+            "public_road",
+            "road_centerline"
+          ],
+          "metrics": [
+            {
+              "metric_id": "METRIC-SETBACK-PUBLIC-ROAD-NARROW",
+              "name": "Public Road Setback Distance (Road width < 6m)",
+              "parameter": "road_centerline_setback",
+              "unit": "meters",
+              "operator": ">=",
+              "threshold": 3.0,
+              "remediation": {
+                "message_th": "เว้นระยะร่นจากกึ่งกลางถนนสาธารณะไม่น้อยกว่า 3.00 เมตร",
+                "message_en": "Increase setback distance from public road centerline to at least 3.00m",
+                "suggested_action": "INCREASE_ROAD_SETBACK"
+              }
+            }
+          ],
+          "clause_key": "CLAUSE_ROAD_SETBACK_STANDARD",
+          "regulation_id": "TH-SETBACKS-2543",
+          "regulation_title": "ข้อกำหนดระยะร่นแนวเขตที่ดินและถนนสาธารณะตามกฎหมายควบคุมอาคาร"
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": "MAT-CONCRETE-240-CUBE",
+      "item_key": "CONCRETE_240_CUBE",
+      "name": "คอนกรีตโครงสร้าง 240 ksc (Cube)",
+      "name_en": "Structural Concrete 240 ksc (Cube)",
+      "category": "structural",
+      "unit": "cu.m",
+      "cost": {
+        "material_price": 1850.0,
+        "labor_price": 440.0,
+        "total_price": 2290.0,
+        "currency": "THB"
+      },
+      "carbon": {
+        "embodied_carbon": 320.0,
+        "unit": "cu.m"
+      },
+      "specification": "Ready-mixed concrete 240 ksc cube strength / 210 ksc cylinder strength",
+      "tags": [
+        "concrete",
+        "structural",
+        "cgd_v480",
+        "carbon",
+        "sustainability"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS",
+        "SUSTAINABILITY-CARBON-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-CONCRETE-280-CUBE",
+      "item_key": "CONCRETE_280_CUBE",
+      "name": "คอนกรีตโครงสร้าง 280 ksc (Cube)",
+      "name_en": "Structural Concrete 280 ksc (Cube)",
+      "category": "structural",
+      "unit": "cu.m",
+      "cost": {
+        "material_price": 1980.0,
+        "labor_price": 440.0,
+        "total_price": 2420.0,
+        "currency": "THB"
+      },
+      "carbon": {
+        "embodied_carbon": 350.0,
+        "unit": "cu.m"
+      },
+      "specification": "Ready-mixed concrete 280 ksc cube strength / 240 ksc cylinder strength",
+      "tags": [
+        "concrete",
+        "structural",
+        "cgd_v480",
+        "carbon",
+        "sustainability"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS",
+        "SUSTAINABILITY-CARBON-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-REBAR-RB9",
+      "item_key": "REBAR_RB9",
+      "name": "เหล็กเส้นกลม RB9 (SR24)",
+      "name_en": "Round Bar Steel RB9 (SR24)",
+      "category": "structural",
+      "unit": "kg",
+      "cost": {
+        "material_price": 24.5,
+        "labor_price": 4.1,
+        "total_price": 28.6,
+        "currency": "THB"
+      },
+      "carbon": null,
+      "specification": "Plain round steel bar diameter 9mm SR24 grade",
+      "tags": [
+        "rebar",
+        "steel",
+        "structural",
+        "cgd_v480"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-REBAR-DB12",
+      "item_key": "REBAR_DB12",
+      "name": "เหล็กข้ออ้อย DB12 (SD40)",
+      "name_en": "Deformed Bar Steel DB12 (SD40)",
+      "category": "structural",
+      "unit": "kg",
+      "cost": {
+        "material_price": 25.0,
+        "labor_price": 3.3,
+        "total_price": 28.3,
+        "currency": "THB"
+      },
+      "carbon": null,
+      "specification": "Deformed steel bar diameter 12mm SD40 grade",
+      "tags": [
+        "rebar",
+        "steel",
+        "structural",
+        "cgd_v480"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-REBAR-DB16",
+      "item_key": "REBAR_DB16",
+      "name": "เหล็กข้ออ้อย DB16 (SD40)",
+      "name_en": "Deformed Bar Steel DB16 (SD40)",
+      "category": "structural",
+      "unit": "kg",
+      "cost": {
+        "material_price": 24.8,
+        "labor_price": 3.3,
+        "total_price": 28.1,
+        "currency": "THB"
+      },
+      "carbon": null,
+      "specification": "Deformed steel bar diameter 16mm SD40 grade",
+      "tags": [
+        "rebar",
+        "steel",
+        "structural",
+        "cgd_v480"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-REBAR-DB20",
+      "item_key": "REBAR_DB20",
+      "name": "เหล็กข้ออ้อย DB20 (SD40)",
+      "name_en": "Deformed Bar Steel DB20 (SD40)",
+      "category": "structural",
+      "unit": "kg",
+      "cost": {
+        "material_price": 24.6,
+        "labor_price": 3.3,
+        "total_price": 27.9,
+        "currency": "THB"
+      },
+      "carbon": null,
+      "specification": "Deformed steel bar diameter 20mm SD40 grade",
+      "tags": [
+        "rebar",
+        "steel",
+        "structural",
+        "cgd_v480"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-REBAR-DB25",
+      "item_key": "REBAR_DB25",
+      "name": "เหล็กข้ออ้อย DB25 (SD40)",
+      "name_en": "Deformed Bar Steel DB25 (SD40)",
+      "category": "structural",
+      "unit": "kg",
+      "cost": {
+        "material_price": 24.5,
+        "labor_price": 3.3,
+        "total_price": 27.8,
+        "currency": "THB"
+      },
+      "carbon": null,
+      "specification": "Deformed steel bar diameter 25mm SD40 grade",
+      "tags": [
+        "rebar",
+        "steel",
+        "structural",
+        "cgd_v480"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-FORMWORK-WOODEN",
+      "item_key": "FORMWORK_WOODEN",
+      "name": "ไม้แบบสำหรับงานคอนกรีต",
+      "name_en": "Wooden Formwork for Concrete",
+      "category": "structural",
+      "unit": "sq.m",
+      "cost": {
+        "material_price": 380.0,
+        "labor_price": 133.0,
+        "total_price": 513.0,
+        "currency": "THB"
+      },
+      "carbon": {
+        "embodied_carbon": 8.5,
+        "unit": "sq.m"
+      },
+      "specification": "Wooden formwork including props and tie rods according to CGD reuse deduction factor guidelines",
+      "tags": [
+        "formwork",
+        "wooden",
+        "structural",
+        "cgd_v480",
+        "carbon",
+        "sustainability"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS",
+        "SUSTAINABILITY-CARBON-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-FORMWORK-STEEL-PROPS",
+      "item_key": "FORMWORK_STEEL_PROPS",
+      "name": "นั่งร้านและค้ำยันเหล็ก",
+      "name_en": "Steel Scaffolding and Props",
+      "category": "structural",
+      "unit": "sq.m",
+      "cost": {
+        "material_price": 120.0,
+        "labor_price": 60.0,
+        "total_price": 180.0,
+        "currency": "THB"
+      },
+      "carbon": {
+        "embodied_carbon": 3.2,
+        "unit": "sq.m"
+      },
+      "specification": "Adjustable steel props and staging support",
+      "tags": [
+        "formwork",
+        "steel",
+        "structural",
+        "cgd_v480",
+        "carbon",
+        "sustainability"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS",
+        "SUSTAINABILITY-CARBON-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-MASONRY-AAC-75MM",
+      "item_key": "MASONRY_AAC_75MM",
+      "name": "ผนังอิฐมวลเบา ความหนา 7.5 ซม.",
+      "name_en": "Autoclaved Aerated Concrete Block Wall 7.5cm",
+      "category": "masonry",
+      "unit": "sq.m",
+      "cost": {
+        "material_price": 220.0,
+        "labor_price": 90.0,
+        "total_price": 310.0,
+        "currency": "THB"
+      },
+      "carbon": {
+        "embodied_carbon": 18.2,
+        "unit": "sq.m"
+      },
+      "specification": "AAC block 7.5cm thickness including thin-bed adhesive mortar",
+      "tags": [
+        "masonry",
+        "aac",
+        "wall",
+        "cgd_v480",
+        "carbon",
+        "sustainability"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS",
+        "SUSTAINABILITY-CARBON-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-MASONRY-CLAY-BRICK",
+      "item_key": "MASONRY_CLAY_BRICK",
+      "name": "ผนังอิฐมอญก่อครึ่งแผ่น",
+      "name_en": "Clay Brick Wall Half-Brick Thick",
+      "category": "masonry",
+      "unit": "sq.m",
+      "cost": {
+        "material_price": 180.0,
+        "labor_price": 95.0,
+        "total_price": 275.0,
+        "currency": "THB"
+      },
+      "carbon": {
+        "embodied_carbon": 28.5,
+        "unit": "sq.m"
+      },
+      "specification": "Standard clay brick masonry half-brick thick with cement-sand mortar",
+      "tags": [
+        "masonry",
+        "clay_brick",
+        "wall",
+        "cgd_v480",
+        "carbon",
+        "sustainability"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS",
+        "SUSTAINABILITY-CARBON-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-FINISH-CERAMIC-TILE",
+      "item_key": "FINISH_CERAMIC_TILE",
+      "name": "กระเบื้องเซรามิก ปูพื้น/ผนัง 12x12 นิ้ว",
+      "name_en": "Ceramic Floor/Wall Tile 12x12 inch",
+      "category": "finish",
+      "unit": "sq.m",
+      "cost": {
+        "material_price": 250.0,
+        "labor_price": 140.0,
+        "total_price": 390.0,
+        "currency": "THB"
+      },
+      "carbon": {
+        "embodied_carbon": 12.0,
+        "unit": "sq.m"
+      },
+      "specification": "Glazed ceramic tile including tile adhesive and grout",
+      "tags": [
+        "finish",
+        "tile",
+        "floor",
+        "wall",
+        "cgd_v480",
+        "carbon",
+        "sustainability"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS",
+        "SUSTAINABILITY-CARBON-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-FINISH-GRANITE-TILE",
+      "item_key": "FINISH_GRANITE_TILE",
+      "name": "กระเบื้องแกรนิตโต้ 60x60 ซม.",
+      "name_en": "Granite/Granito Tile 60x60 cm",
+      "category": "finish",
+      "unit": "sq.m",
+      "cost": {
+        "material_price": 450.0,
+        "labor_price": 160.0,
+        "total_price": 610.0,
+        "currency": "THB"
+      },
+      "carbon": {
+        "embodied_carbon": 19.5,
+        "unit": "sq.m"
+      },
+      "specification": "Polished homogeneous granito tile 60x60 cm",
+      "tags": [
+        "finish",
+        "granite",
+        "granito",
+        "floor",
+        "cgd_v480",
+        "carbon",
+        "sustainability"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS",
+        "SUSTAINABILITY-CARBON-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-FINISH-WOOD-PARQUET",
+      "item_key": "FINISH_WOOD_PARQUET",
+      "name": "พื้นไม้ปาร์เก้ ไม้แดง/ไม้สัก",
+      "name_en": "Solid Wood Parquet Flooring (Makha/Teak)",
+      "category": "finish",
+      "unit": "sq.m",
+      "cost": {
+        "material_price": 1200.0,
+        "labor_price": 350.0,
+        "total_price": 1550.0,
+        "currency": "THB"
+      },
+      "carbon": {
+        "embodied_carbon": 5.2,
+        "unit": "sq.m"
+      },
+      "specification": "Solid hardwood parquet block flooring including sanding and polyurethane coating",
+      "tags": [
+        "finish",
+        "parquet",
+        "wood",
+        "floor",
+        "cgd_v480",
+        "carbon",
+        "sustainability"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS",
+        "SUSTAINABILITY-CARBON-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-OPENING-ALUMINUM-GLASS-DOOR",
+      "item_key": "OPENING_ALUMINUM_GLASS_DOOR",
+      "name": "ประตูอบขาว อลูมิเนียมกระจกใส 6 มม.",
+      "name_en": "Powder-Coated Aluminum Glass Door 6mm Clear",
+      "category": "opening",
+      "unit": "sq.m",
+      "cost": {
+        "material_price": 2200.0,
+        "labor_price": 300.0,
+        "total_price": 2500.0,
+        "currency": "THB"
+      },
+      "carbon": {
+        "embodied_carbon": 45.0,
+        "unit": "sq.m"
+      },
+      "specification": "Powder-coated white aluminum frame door with 6mm clear safety float glass",
+      "tags": [
+        "opening",
+        "door",
+        "aluminum",
+        "glass",
+        "cgd_v480",
+        "carbon",
+        "sustainability"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS",
+        "SUSTAINABILITY-CARBON-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-OPENING-ALUMINUM-GLASS-WINDOW",
+      "item_key": "OPENING_ALUMINUM_GLASS_WINDOW",
+      "name": "หน้าต่างอบขาว อลูมิเนียมกระจกใส 6 มม.",
+      "name_en": "Powder-Coated Aluminum Glass Window 6mm Clear",
+      "category": "opening",
+      "unit": "sq.m",
+      "cost": {
+        "material_price": 1800.0,
+        "labor_price": 250.0,
+        "total_price": 2050.0,
+        "currency": "THB"
+      },
+      "carbon": {
+        "embodied_carbon": 38.0,
+        "unit": "sq.m"
+      },
+      "specification": "Powder-coated white aluminum frame window with 6mm clear float glass",
+      "tags": [
+        "opening",
+        "window",
+        "aluminum",
+        "glass",
+        "cgd_v480",
+        "carbon",
+        "sustainability"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS",
+        "SUSTAINABILITY-CARBON-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-ROOFING-CPAC-MONIER",
+      "item_key": "ROOFING_CPAC_MONIER",
+      "name": "กระเบื้องหลังคา คอนกรีต ซีแพคโมเนีย",
+      "name_en": "CPAC Monier Concrete Roof Tile",
+      "category": "roofing",
+      "unit": "sq.m",
+      "cost": {
+        "material_price": 280.0,
+        "labor_price": 110.0,
+        "total_price": 390.0,
+        "currency": "THB"
+      },
+      "carbon": {
+        "embodied_carbon": 16.5,
+        "unit": "sq.m"
+      },
+      "specification": "Interlocking concrete roof tile including standard fittings and ridge tiles",
+      "tags": [
+        "roofing",
+        "tile",
+        "concrete",
+        "cgd_v480",
+        "carbon",
+        "sustainability"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS",
+        "SUSTAINABILITY-CARBON-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-ROOFING-METAL-SHEET-PU",
+      "item_key": "ROOFING_METAL_SHEET_PU",
+      "name": "หลังคาเมทัลชีท หนา 0.47 มม. บุฉนวน PU Foam 1 นิ้ว",
+      "name_en": "Metal Sheet Roofing 0.47mm with 1-inch PU Foam Insulation",
+      "category": "roofing",
+      "unit": "sq.m",
+      "cost": {
+        "material_price": 420.0,
+        "labor_price": 80.0,
+        "total_price": 500.0,
+        "currency": "THB"
+      },
+      "carbon": {
+        "embodied_carbon": 14.8,
+        "unit": "sq.m"
+      },
+      "specification": "Aluzinc steel profile roofing sheet 0.47mm thickness laminated with 25mm rigid PU foam insulation",
+      "tags": [
+        "roofing",
+        "metal_sheet",
+        "pu_foam",
+        "insulation",
+        "cgd_v480",
+        "carbon",
+        "sustainability"
+      ],
+      "catalogs": [
+        "CGD-V480-MATERIALS",
+        "SUSTAINABILITY-CARBON-MATERIALS"
+      ]
+    },
+    {
+      "id": "MAT-REBAR-STEEL",
+      "item_key": "REBAR_STEEL",
+      "name": "เหล็กเส้นเสริมคอนกรีต (SR24/SD40)",
+      "name_en": "Steel Reinforcing Bar (SR24/SD40)",
+      "category": "structural",
+      "unit": "kg",
+      "cost": null,
+      "carbon": {
+        "embodied_carbon": 1.82,
+        "unit": "kg"
+      },
+      "specification": "Average cradle-to-gate embodied carbon for electric arc furnace (EAF) steel rebar",
+      "tags": [
+        "rebar",
+        "steel",
+        "structural",
+        "carbon",
+        "sustainability"
+      ],
+      "catalogs": [
+        "SUSTAINABILITY-CARBON-MATERIALS"
+      ]
+    }
+  ]
+}
