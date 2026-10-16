@@ -1,0 +1,173 @@
+schema: "debim-standards/material/v1.0"
+catalog_id: "SUSTAINABILITY-CARBON-MATERIALS"
+title: "เกณฑ์มาตรฐานคาร์บอนแฝงในวัสดุก่อสร้าง (Embodied Carbon Benchmarks)"
+title_en: "Embodied Carbon Benchmarks for Standard Construction Materials"
+description: "Embodied carbon metrics (kgCO2e per unit) for Thai construction materials based on LCA benchmarks and standard EPDs."
+items:
+  CONCRETE_240_CUBE:
+    id: "MAT-CONCRETE-240-CUBE"
+    name: "คอนกรีตโครงสร้าง 240 ksc (Cube)"
+    name_en: "Structural Concrete 240 ksc (Cube)"
+    category: "structural"
+    unit: "cu.m"
+    carbon:
+      embodied_carbon: 320.0
+      unit: "cu.m"
+    specification: "Cradle-to-gate embodied carbon for 240 ksc ready-mix concrete (~0.133 kgCO2e/kg)"
+    tags: ["concrete", "structural", "carbon", "sustainability"]
+
+  CONCRETE_280_CUBE:
+    id: "MAT-CONCRETE-280-CUBE"
+    name: "คอนกรีตโครงสร้าง 280 ksc (Cube)"
+    name_en: "Structural Concrete 280 ksc (Cube)"
+    category: "structural"
+    unit: "cu.m"
+    carbon:
+      embodied_carbon: 350.0
+      unit: "cu.m"
+    specification: "Cradle-to-gate embodied carbon for 280 ksc ready-mix concrete (~0.145 kgCO2e/kg)"
+    tags: ["concrete", "structural", "carbon", "sustainability"]
+
+  REBAR_STEEL:
+    id: "MAT-REBAR-STEEL"
+    name: "เหล็กเส้นเสริมคอนกรีต (SR24/SD40)"
+    name_en: "Steel Reinforcing Bar (SR24/SD40)"
+    category: "structural"
+    unit: "kg"
+    carbon:
+      embodied_carbon: 1.82
+      unit: "kg"
+    specification: "Average cradle-to-gate embodied carbon for electric arc furnace (EAF) steel rebar"
+    tags: ["rebar", "steel", "structural", "carbon", "sustainability"]
+
+  FORMWORK_WOODEN:
+    id: "MAT-FORMWORK-WOODEN"
+    name: "ไม้แบบสำหรับงานคอนกรีต"
+    name_en: "Wooden Formwork for Concrete"
+    category: "structural"
+    unit: "sq.m"
+    carbon:
+      embodied_carbon: 8.5
+      unit: "sq.m"
+    specification: "Plywood formwork accounting for 3x reuse cycle"
+    tags: ["formwork", "wooden", "structural", "carbon", "sustainability"]
+
+  FORMWORK_STEEL_PROPS:
+    id: "MAT-FORMWORK-STEEL-PROPS"
+    name: "นั่งร้านและค้ำยันเหล็ก"
+    name_en: "Steel Scaffolding and Props"
+    category: "structural"
+    unit: "sq.m"
+    carbon:
+      embodied_carbon: 3.2
+      unit: "sq.m"
+    specification: "Steel prop support system amortized over multi-project lifecycle"
+    tags: ["formwork", "steel", "structural", "carbon", "sustainability"]
+
+  MASONRY_AAC_75MM:
+    id: "MAT-MASONRY-AAC-75MM"
+    name: "ผนังอิฐมวลเบา ความหนา 7.5 ซม."
+    name_en: "Autoclaved Aerated Concrete Block Wall 7.5cm"
+    category: "masonry"
+    unit: "sq.m"
+    carbon:
+      embodied_carbon: 18.2
+      unit: "sq.m"
+    specification: "7.5cm AAC block including jointing mortar (~0.33 kgCO2e/kg)"
+    tags: ["masonry", "aac", "wall", "carbon", "sustainability"]
+
+  MASONRY_CLAY_BRICK:
+    id: "MAT-MASONRY-CLAY-BRICK"
+    name: "ผนังอิฐมอญก่อครึ่งแผ่น"
+    name_en: "Clay Brick Wall Half-Brick Thick"
+    category: "masonry"
+    unit: "sq.m"
+    carbon:
+      embodied_carbon: 28.5
+      unit: "sq.m"
+    specification: "Clay brick masonry including cement mortar bed"
+    tags: ["masonry", "clay_brick", "wall", "carbon", "sustainability"]
+
+  FINISH_CERAMIC_TILE:
+    id: "MAT-FINISH-CERAMIC-TILE"
+    name: "กระเบื้องเซรามิก ปูพื้น/ผนัง 12x12 นิ้ว"
+    name_en: "Ceramic Floor/Wall Tile 12x12 inch"
+    category: "finish"
+    unit: "sq.m"
+    carbon:
+      embodied_carbon: 12.0
+      unit: "sq.m"
+    specification: "Glazed ceramic tile including adhesive mortar"
+    tags: ["finish", "tile", "floor", "wall", "carbon", "sustainability"]
+
+  FINISH_GRANITE_TILE:
+    id: "MAT-FINISH-GRANITE-TILE"
+    name: "กระเบื้องแกรนิตโต้ 60x60 ซม."
+    name_en: "Granite/Granito Tile 60x60 cm"
+    category: "finish"
+    unit: "sq.m"
+    carbon:
+      embodied_carbon: 19.5
+      unit: "sq.m"
+    specification: "Polished granito tile including setting bed"
+    tags: ["finish", "granite", "granito", "floor", "carbon", "sustainability"]
+
+  FINISH_WOOD_PARQUET:
+    id: "MAT-FINISH-WOOD-PARQUET"
+    name: "พื้นไม้ปาร์เก้ ไม้แดง/ไม้สัก"
+    name_en: "Solid Wood Parquet Flooring (Makha/Teak)"
+    category: "finish"
+    unit: "sq.m"
+    carbon:
+      embodied_carbon: 5.2
+      unit: "sq.m"
+    specification: "Solid wood parquet processing and adhesive installation embodied carbon"
+    tags: ["finish", "parquet", "wood", "floor", "carbon", "sustainability"]
+
+  OPENING_ALUMINUM_GLASS_DOOR:
+    id: "MAT-OPENING-ALUMINUM-GLASS-DOOR"
+    name: "ประตูอบขาว อลูมิเนียมกระจกใส 6 มม."
+    name_en: "Powder-Coated Aluminum Glass Door 6mm Clear"
+    category: "opening"
+    unit: "sq.m"
+    carbon:
+      embodied_carbon: 45.0
+      unit: "sq.m"
+    specification: "Extruded aluminum frame with 6mm clear glass pane"
+    tags: ["opening", "door", "aluminum", "glass", "carbon", "sustainability"]
+
+  OPENING_ALUMINUM_GLASS_WINDOW:
+    id: "MAT-OPENING-ALUMINUM-GLASS-WINDOW"
+    name: "หน้าต่างอบขาว อลูมิเนียมกระจกใส 6 มม."
+    name_en: "Powder-Coated Aluminum Glass Window 6mm Clear"
+    category: "opening"
+    unit: "sq.m"
+    carbon:
+      embodied_carbon: 38.0
+      unit: "sq.m"
+    specification: "Extruded aluminum window frame with 6mm clear glass pane"
+    tags: ["opening", "window", "aluminum", "glass", "carbon", "sustainability"]
+
+  ROOFING_CPAC_MONIER:
+    id: "MAT-ROOFING-CPAC-MONIER"
+    name: "กระเบื้องหลังคา คอนกรีต ซีแพคโมเนีย"
+    name_en: "CPAC Monier Concrete Roof Tile"
+    category: "roofing"
+    unit: "sq.m"
+    carbon:
+      embodied_carbon: 16.5
+      unit: "sq.m"
+    specification: "Concrete roof tile per sq.m roof coverage (~45 kg/sq.m mass)"
+    tags: ["roofing", "tile", "concrete", "carbon", "sustainability"]
+
+  ROOFING_METAL_SHEET_PU:
+    id: "MAT-ROOFING-METAL-SHEET-PU"
+    name: "หลังคาเมทัลชีท หนา 0.47 มม. บุฉนวน PU Foam 1 นิ้ว"
+    name_en: "Metal Sheet Roofing 0.47mm with 1-inch PU Foam Insulation"
+    category: "roofing"
+    unit: "sq.m"
+    carbon:
+      embodied_carbon: 14.8
+      unit: "sq.m"
+    specification: "0.47mm aluzinc steel sheet with rigid polyurethane foam insulation core"
+    tags: ["roofing", "metal_sheet", "pu_foam", "carbon", "sustainability"]
