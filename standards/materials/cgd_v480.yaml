@@ -1,0 +1,257 @@
+schema: "debim-standards/material/v1.0"
+catalog_id: "CGD-V480-MATERIALS"
+title: "หลักเกณฑ์ราคากลางงานก่อสร้างภาครัฐ กรมบัญชีกลาง ว480"
+title_en: "Thai Comptroller General's Department (CGD) v480 Pricing Standards"
+description: "Standard material and labor cost breakdown according to CGD v480 criteria for Thai public works."
+items:
+  CONCRETE_240_CUBE:
+    id: "MAT-CONCRETE-240-CUBE"
+    name: "คอนกรีตโครงสร้าง 240 ksc (Cube)"
+    name_en: "Structural Concrete 240 ksc (Cube)"
+    category: "structural"
+    unit: "cu.m"
+    cost:
+      material_price: 1850.0
+      labor_price: 440.0
+      total_price: 2290.0
+      currency: "THB"
+    specification: "Ready-mixed concrete 240 ksc cube strength / 210 ksc cylinder strength"
+    tags: ["concrete", "structural", "cgd_v480"]
+
+  CONCRETE_280_CUBE:
+    id: "MAT-CONCRETE-280-CUBE"
+    name: "คอนกรีตโครงสร้าง 280 ksc (Cube)"
+    name_en: "Structural Concrete 280 ksc (Cube)"
+    category: "structural"
+    unit: "cu.m"
+    cost:
+      material_price: 1980.0
+      labor_price: 440.0
+      total_price: 2420.0
+      currency: "THB"
+    specification: "Ready-mixed concrete 280 ksc cube strength / 240 ksc cylinder strength"
+    tags: ["concrete", "structural", "cgd_v480"]
+
+  REBAR_RB9:
+    id: "MAT-REBAR-RB9"
+    name: "เหล็กเส้นกลม RB9 (SR24)"
+    name_en: "Round Bar Steel RB9 (SR24)"
+    category: "structural"
+    unit: "kg"
+    cost:
+      material_price: 24.50
+      labor_price: 4.10
+      total_price: 28.60
+      currency: "THB"
+    specification: "Plain round steel bar diameter 9mm SR24 grade"
+    tags: ["rebar", "steel", "structural", "cgd_v480"]
+
+  REBAR_DB12:
+    id: "MAT-REBAR-DB12"
+    name: "เหล็กข้ออ้อย DB12 (SD40)"
+    name_en: "Deformed Bar Steel DB12 (SD40)"
+    category: "structural"
+    unit: "kg"
+    cost:
+      material_price: 25.00
+      labor_price: 3.30
+      total_price: 28.30
+      currency: "THB"
+    specification: "Deformed steel bar diameter 12mm SD40 grade"
+    tags: ["rebar", "steel", "structural", "cgd_v480"]
+
+  REBAR_DB16:
+    id: "MAT-REBAR-DB16"
+    name: "เหล็กข้ออ้อย DB16 (SD40)"
+    name_en: "Deformed Bar Steel DB16 (SD40)"
+    category: "structural"
+    unit: "kg"
+    cost:
+      material_price: 24.80
+      labor_price: 3.30
+      total_price: 28.10
+      currency: "THB"
+    specification: "Deformed steel bar diameter 16mm SD40 grade"
+    tags: ["rebar", "steel", "structural", "cgd_v480"]
+
+  REBAR_DB20:
+    id: "MAT-REBAR-DB20"
+    name: "เหล็กข้ออ้อย DB20 (SD40)"
+    name_en: "Deformed Bar Steel DB20 (SD40)"
+    category: "structural"
+    unit: "kg"
+    cost:
+      material_price: 24.60
+      labor_price: 3.30
+      total_price: 27.90
+      currency: "THB"
+    specification: "Deformed steel bar diameter 20mm SD40 grade"
+    tags: ["rebar", "steel", "structural", "cgd_v480"]
+
+  REBAR_DB25:
+    id: "MAT-REBAR-DB25"
+    name: "เหล็กข้ออ้อย DB25 (SD40)"
+    name_en: "Deformed Bar Steel DB25 (SD40)"
+    category: "structural"
+    unit: "kg"
+    cost:
+      material_price: 24.50
+      labor_price: 3.30
+      total_price: 27.80
+      currency: "THB"
+    specification: "Deformed steel bar diameter 25mm SD40 grade"
+    tags: ["rebar", "steel", "structural", "cgd_v480"]
+
+  FORMWORK_WOODEN:
+    id: "MAT-FORMWORK-WOODEN"
+    name: "ไม้แบบสำหรับงานคอนกรีต"
+    name_en: "Wooden Formwork for Concrete"
+    category: "structural"
+    unit: "sq.m"
+    cost:
+      material_price: 380.0
+      labor_price: 133.0
+      total_price: 513.0
+      currency: "THB"
+    specification: "Wooden formwork including props and tie rods according to CGD reuse deduction factor guidelines"
+    tags: ["formwork", "wooden", "structural", "cgd_v480"]
+
+  FORMWORK_STEEL_PROPS:
+    id: "MAT-FORMWORK-STEEL-PROPS"
+    name: "นั่งร้านและค้ำยันเหล็ก"
+    name_en: "Steel Scaffolding and Props"
+    category: "structural"
+    unit: "sq.m"
+    cost:
+      material_price: 120.0
+      labor_price: 60.0
+      total_price: 180.0
+      currency: "THB"
+    specification: "Adjustable steel props and staging support"
+    tags: ["formwork", "steel", "structural", "cgd_v480"]
+
+  MASONRY_AAC_75MM:
+    id: "MAT-MASONRY-AAC-75MM"
+    name: "ผนังอิฐมวลเบา ความหนา 7.5 ซม."
+    name_en: "Autoclaved Aerated Concrete Block Wall 7.5cm"
+    category: "masonry"
+    unit: "sq.m"
+    cost:
+      material_price: 220.0
+      labor_price: 90.0
+      total_price: 310.0
+      currency: "THB"
+    specification: "AAC block 7.5cm thickness including thin-bed adhesive mortar"
+    tags: ["masonry", "aac", "wall", "cgd_v480"]
+
+  MASONRY_CLAY_BRICK:
+    id: "MAT-MASONRY-CLAY-BRICK"
+    name: "ผนังอิฐมอญก่อครึ่งแผ่น"
+    name_en: "Clay Brick Wall Half-Brick Thick"
+    category: "masonry"
+    unit: "sq.m"
+    cost:
+      material_price: 180.0
+      labor_price: 95.0
+      total_price: 275.0
+      currency: "THB"
+    specification: "Standard clay brick masonry half-brick thick with cement-sand mortar"
+    tags: ["masonry", "clay_brick", "wall", "cgd_v480"]
+
+  FINISH_CERAMIC_TILE:
+    id: "MAT-FINISH-CERAMIC-TILE"
+    name: "กระเบื้องเซรามิก ปูพื้น/ผนัง 12x12 นิ้ว"
+    name_en: "Ceramic Floor/Wall Tile 12x12 inch"
+    category: "finish"
+    unit: "sq.m"
+    cost:
+      material_price: 250.0
+      labor_price: 140.0
+      total_price: 390.0
+      currency: "THB"
+    specification: "Glazed ceramic tile including tile adhesive and grout"
+    tags: ["finish", "tile", "floor", "wall", "cgd_v480"]
+
+  FINISH_GRANITE_TILE:
+    id: "MAT-FINISH-GRANITE-TILE"
+    name: "กระเบื้องแกรนิตโต้ 60x60 ซม."
+    name_en: "Granite/Granito Tile 60x60 cm"
+    category: "finish"
+    unit: "sq.m"
+    cost:
+      material_price: 450.0
+      labor_price: 160.0
+      total_price: 610.0
+      currency: "THB"
+    specification: "Polished homogeneous granito tile 60x60 cm"
+    tags: ["finish", "granite", "granito", "floor", "cgd_v480"]
+
+  FINISH_WOOD_PARQUET:
+    id: "MAT-FINISH-WOOD-PARQUET"
+    name: "พื้นไม้ปาร์เก้ ไม้แดง/ไม้สัก"
+    name_en: "Solid Wood Parquet Flooring (Makha/Teak)"
+    category: "finish"
+    unit: "sq.m"
+    cost:
+      material_price: 1200.0
+      labor_price: 350.0
+      total_price: 1550.0
+      currency: "THB"
+    specification: "Solid hardwood parquet block flooring including sanding and polyurethane coating"
+    tags: ["finish", "parquet", "wood", "floor", "cgd_v480"]
+
+  OPENING_ALUMINUM_GLASS_DOOR:
+    id: "MAT-OPENING-ALUMINUM-GLASS-DOOR"
+    name: "ประตูอบขาว อลูมิเนียมกระจกใส 6 มม."
+    name_en: "Powder-Coated Aluminum Glass Door 6mm Clear"
+    category: "opening"
+    unit: "sq.m"
+    cost:
+      material_price: 2200.0
+      labor_price: 300.0
+      total_price: 2500.0
+      currency: "THB"
+    specification: "Powder-coated white aluminum frame door with 6mm clear safety float glass"
+    tags: ["opening", "door", "aluminum", "glass", "cgd_v480"]
+
+  OPENING_ALUMINUM_GLASS_WINDOW:
+    id: "MAT-OPENING-ALUMINUM-GLASS-WINDOW"
+    name: "หน้าต่างอบขาว อลูมิเนียมกระจกใส 6 มม."
+    name_en: "Powder-Coated Aluminum Glass Window 6mm Clear"
+    category: "opening"
+    unit: "sq.m"
+    cost:
+      material_price: 1800.0
+      labor_price: 250.0
+      total_price: 2050.0
+      currency: "THB"
+    specification: "Powder-coated white aluminum frame window with 6mm clear float glass"
+    tags: ["opening", "window", "aluminum", "glass", "cgd_v480"]
+
+  ROOFING_CPAC_MONIER:
+    id: "MAT-ROOFING-CPAC-MONIER"
+    name: "กระเบื้องหลังคา คอนกรีต ซีแพคโมเนีย"
+    name_en: "CPAC Monier Concrete Roof Tile"
+    category: "roofing"
+    unit: "sq.m"
+    cost:
+      material_price: 280.0
+      labor_price: 110.0
+      total_price: 390.0
+      currency: "THB"
+    specification: "Interlocking concrete roof tile including standard fittings and ridge tiles"
+    tags: ["roofing", "tile", "concrete", "cgd_v480"]
+
+  ROOFING_METAL_SHEET_PU:
+    id: "MAT-ROOFING-METAL-SHEET-PU"
+    name: "หลังคาเมทัลชีท หนา 0.47 มม. บุฉนวน PU Foam 1 นิ้ว"
+    name_en: "Metal Sheet Roofing 0.47mm with 1-inch PU Foam Insulation"
+    category: "roofing"
+    unit: "sq.m"
+    cost:
+      material_price: 420.0
+      labor_price: 80.0
+      total_price: 500.0
+      currency: "THB"
+    specification: "Aluzinc steel profile roofing sheet 0.47mm thickness laminated with 25mm rigid PU foam insulation"
+    tags: ["roofing", "metal_sheet", "pu_foam", "insulation", "cgd_v480"]

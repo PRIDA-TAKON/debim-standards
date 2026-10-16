@@ -116,3 +116,48 @@ class HumanScaleCatalog(BaseModel):
     category: str = Field(..., description="Space category e.g., bedroom, living, dining")
     description: str = Field(..., description="Brief description of the catalog domain")
     items: Dict[str, FurnitureStandard] = Field(..., description="Map of item keys to FurnitureStandard models")
+
+
+class CostBreakdown(BaseModel):
+    """
+    Cost breakdown for a material or labor unit according to pricing guidelines (e.g. CGD ว480).
+    """
+    material_price: float = Field(0.0, ge=0.0, description="Material price per unit")
+    labor_price: float = Field(0.0, ge=0.0, description="Labor price per unit")
+    total_price: float = Field(0.0, ge=0.0, description="Total combined price per unit")
+    currency: str = Field("THB", description="Currency code (e.g., THB)")
+
+
+class CarbonMetrics(BaseModel):
+    """
+    Embodied carbon metrics for construction materials.
+    """
+    embodied_carbon: float = Field(..., ge=0.0, description="Embodied carbon in kgCO2e per unit")
+    unit: str = Field(..., description="Unit of measurement for embodied carbon e.g., kg, cu.m, sq.m")
+
+
+class MaterialItem(BaseModel):
+    """
+    Standardized construction material item with pricing criteria and sustainability metrics.
+    """
+    id: str = Field(..., description="Unique material identifier e.g., MAT-CONCRETE-240KSC")
+    name: str = Field(..., description="Material name in local language (e.g., Thai)")
+    name_en: str = Field(..., description="Material name in English")
+    category: str = Field(..., description="Material category e.g., structural, masonry, finish, opening, roofing")
+    unit: str = Field(..., description="Base unit of measurement e.g., cu.m, kg, sq.m, m, set")
+    cost: Optional[CostBreakdown] = Field(None, description="Cost breakdown (material, labor, total)")
+    carbon: Optional[CarbonMetrics] = Field(None, description="Embodied carbon metrics")
+    specification: Optional[str] = Field(None, description="Detailed technical specification or reference criteria")
+    tags: List[str] = Field(default_factory=list, description="Categorization tags")
+
+
+class MaterialCatalog(BaseModel):
+    """
+    Catalog of material specifications, pricing, or carbon metrics.
+    """
+    schema_version: str = Field(..., alias="schema", description="Schema identifier e.g., debim-standards/material/v1.0")
+    catalog_id: str = Field(..., description="Unique catalog identifier e.g., CGD-V480-MATERIALS or SUSTAINABILITY-CARBON")
+    title: str = Field(..., description="Catalog title in Thai")
+    title_en: str = Field(..., description="Catalog title in English")
+    description: str = Field(..., description="Description of the material catalog")
+    items: Dict[str, MaterialItem] = Field(..., description="Map of item keys to MaterialItem models")
